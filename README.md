@@ -16,14 +16,4 @@ _✨ 同时融合了[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin
 
 
 ## 说明
-文档请参考[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，与其相同的部分不再赘述。
-
-要开启[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin)，你还需要在`config.yml`中添加如下内容
-
-```yml
-# 连接服务列表
-servers:
-  # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
-  - funcall:
-      disabled: false
-```
+文档请参考[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，默认开启[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin)，无需任何额外操作即可使用。
