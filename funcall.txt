@@ -1,0 +1,147 @@
+package driver
+
+import (
+	"encoding/json"
+	"errors"
+	"runtime/debug"
+	"strings"
+	"sync/atomic"
+
+	"github.com/Mrs4s/go-cqhttp/coolq"
+	"github.com/Mrs4s/go-cqhttp/global"
+	"github.com/Mrs4s/go-cqhttp/modules/api"
+	"github.com/Mrs4s/go-cqhttp/modules/servers"
+	log "github.com/sirupsen/logrus"
+	"github.com/tidwall/gjson"
+
+	zero "github.com/wdvxdr1123/ZeroBot"
+	"github.com/wdvxdr1123/ZeroBot/utils/helper"
+)
+
+type FCClient struct {
+	bot     *coolq.CQBot
+	caller  *api.Caller
+	seq     uint64
+	selfID  int64
+	handler func([]byte, zero.APICaller)
+	init    func(*FCClient)
+	name    string
+}
+
+var fccs = make(map[string]*FCClient)
+
+// NewFuncallClient ...
+func NewFuncallClient(name string, init func(*FCClient)) *FCClient {
+	fcc, ok := fccs[name]
+	if ok {
+		return fcc
+	}
+	fcc = new(FCClient)
+	fcc.name = name
+	fcc.init = init
+	fccs[name] = fcc
+	return fcc
+}
+
+// Connect 连接服务端
+func (f *FCClient) Connect() {
+	rsp, err := f.CallApi(zero.APIRequest{
+		Action: "get_login_info",
+		Params: nil,
+	})
+	if err == nil {
+		f.selfID = rsp.Data.Get("user_id").Int()
+		zero.APICallers.Store(f.selfID, f) // 添加Caller到 APICaller list...
+		log.Infoln("连接funcall对端成功")
+	} else {
+		log.Warnln("连接funcall对端失败：", err)
+	}
+}
+
+// Listen 开始监听事件
+func (f *FCClient) Listen(handler func([]byte, zero.APICaller)) {
+	f.handler = handler
+}
+
+// CallApi 发送请求
+func (f *FCClient) CallApi(req zero.APIRequest) (zero.APIResponse, error) {
+	req.Echo = f.nextSeq()
+	data, err := json.Marshal(req)
+	if err != nil {
+		return nullResponse, err
+	}
+
+	rsp := f.handleRequest(data)
+	log.Debug("向服务器发送请求: ", helper.BytesToString(data))
+	if rsp == nil {
+		return nullResponse, errors.New("null echo response")
+	}
+	return *rsp, nil
+}
+
+// SelfID 获得 bot qq 号
+func (f *FCClient) SelfID() int64 {
+	return f.selfID
+}
+
+func (f *FCClient) nextSeq() uint64 {
+	return atomic.AddUint64(&f.seq, 1)
+}
+
+func init() {
+	servers.RegisterCustom("funcall", runFuncall)
+}
+
+// runFuncall 运行经由函数调用的事件通信接口
+func runFuncall(b *coolq.CQBot) {
+	for n, s := range fccs {
+		s.bot = b
+		s.caller = api.NewCaller(b)
+		b.OnEventPush(s.onBotPushEvent)
+		s.init(s)
+		log.Infoln("CQ funcall 服务器", n, "已启动")
+	}
+}
+
+func (s *FCClient) handleRequest(payload []byte) (r *zero.APIResponse) {
+	defer func() {
+		if err := recover(); err != nil {
+			log.Printf("处置funcall插件%s的命令时发生无法恢复的异常：%v\n%s", s.name, err, debug.Stack())
+		}
+	}()
+	j := gjson.Parse(helper.BytesToString(payload))
+	t := strings.TrimSuffix(j.Get("action").Str, "_async")
+	log.Debugf("funcall插件%s接收到API调用: %v 参数: %v", s.name, t, j.Get("params").Raw)
+	ret := s.caller.Call(t, j.Get("params"))
+	if j.Get("echo").Exists() {
+		ret["echo"] = j.Get("echo").Value()
+	}
+	buffer := global.NewBuffer()
+	err := json.NewEncoder(buffer).Encode(ret)
+	if err == nil {
+		rsp := gjson.Parse(helper.BytesToString(buffer.Bytes()))
+		if rsp.Get("echo").Exists() { // 存在echo字段，是api调用的返回
+			log.Debug("接收到API调用返回: ", strings.TrimSpace(helper.BytesToString(buffer.Bytes())))
+			r = &zero.APIResponse{ // 发送api调用响应
+				Status:  rsp.Get("status").String(),
+				Data:    rsp.Get("data"),
+				Msg:     rsp.Get("msg").Str,
+				Wording: rsp.Get("wording").Str,
+				RetCode: rsp.Get("retcode").Int(),
+				Echo:    rsp.Get("echo").Uint(),
+			}
+		}
+	}
+	global.PutBuffer(buffer)
+	return
+}
+
+func (s *FCClient) onBotPushEvent(e *coolq.Event) {
+	log.Debugf("向funcall插件%s推送Event: %s", s.name, e.JSONBytes())
+	payload := e.JSONBytes()
+	rsp := gjson.Parse(helper.BytesToString(payload))
+	if rsp.Get("meta_event_type").Str != "heartbeat" { // 忽略心跳事件
+		log.Debug("接收到事件: ", helper.BytesToString(payload))
+	}
+	go s.handler(payload, s)
+}
