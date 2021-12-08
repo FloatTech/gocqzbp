@@ -12,6 +12,8 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_atri"      // ATRI词库
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_chat"      // 基础词库
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_qingyunke" // 青云客
+	"github.com/Mrs4s/go-cqhttp/coolq"
+	"github.com/Mrs4s/go-cqhttp/modules/servers"
 
 	// 实用类
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_b14"          // base16384加解密
@@ -90,7 +92,10 @@ func printBanner() {
 }
 
 func init() {
-	driver.NewFuncallClient("zbp", func(f *driver.FCClient) {
+	driver.RegisterServer(func(s string, f func(driver.CQBot)) {
+		servers.RegisterCustom(s, func(c *coolq.CQBot) { f((*CQBot)(c)) })
+	})
+	driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
 		printBanner()
 		// 帮助
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().

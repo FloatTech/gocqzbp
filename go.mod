@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211207010130-ca4a6827942f
 	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4
-	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211207143930-26a7a1f0b659
+	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211208054929-8b8a59f6d172
 	github.com/wdvxdr1123/ZeroBot v1.4.1
 )
 
@@ -14,7 +14,7 @@ require (
 	github.com/FloatTech/AnimeAPI v1.1.10 // indirect
 	github.com/FloatTech/imgfactory v0.1.1 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20211207052901-2d17133a7b38 // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20211208054742-2caf71a0bb47 // indirect
 	github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 // indirect
 	github.com/antchfx/htmlquery v1.2.4 // indirect
 	github.com/antchfx/xpath v1.2.0 // indirect
