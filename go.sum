@@ -28,10 +28,14 @@ github.com/Mrs4s/MiraiGo v0.0.0-20211207052901-2d17133a7b38 h1:IJg8tgGzHg/95Rav7
 github.com/Mrs4s/MiraiGo v0.0.0-20211207052901-2d17133a7b38/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
 github.com/Mrs4s/MiraiGo v0.0.0-20211208054742-2caf71a0bb47 h1:A3oKsmP6vPaRUK6KKASpm80TrWZHggLQAI1Q41ENwnk=
 github.com/Mrs4s/MiraiGo v0.0.0-20211208054742-2caf71a0bb47/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
+github.com/Mrs4s/MiraiGo v0.0.0-20211208080234-25c67a3ee1c1 h1:UipCzEST10GzJnvlhHsY4g39xzwVzSHE+5Go9d0dTPY=
+github.com/Mrs4s/MiraiGo v0.0.0-20211208080234-25c67a3ee1c1/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211207143930-26a7a1f0b659 h1:n2MtGpBNrOa1Yt8AYg9/tEDoYh0/PNayGXvyAmQQrvg=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211207143930-26a7a1f0b659/go.mod h1:TINoW323M51WFL0isUZZwMMqUSazftouTRBBskVlL08=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211208054929-8b8a59f6d172 h1:GB+mYYmVpcEcJz2EeIzN9xaqaPNY95OTLbFHTCxLiNk=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix1.0.20211208054929-8b8a59f6d172/go.mod h1:SlDcvzNs3ET1K7nac0R0CaGo9Jd9YrDOFRliGSmykpQ=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2 h1:sgFkSm/T8yFUscZL8Dc5EyIrwvgQM6SFsHiojB9gf1o=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2/go.mod h1:qqBbg8VNg/u/fjRY9cX+wdhhpHOmMSN8jfpAl14EFGw=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/RomiChan/protobuf v0.0.0-20211202142450-893e94b43c21/go.mod h1:CKKOWC7mBxd36zxsCB1V8DTrwlTNRQvkSVbYqyUiGEE=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 h1:p4o7/eSoP39jwnGZz08N1IpH/mNzg9SdCn7kPM9A9BE=
