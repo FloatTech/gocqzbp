@@ -3,9 +3,10 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211208093522-5645fa0168a7
+	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213051142-f7a3c0e6c659
 	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4
 	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2
+	github.com/tidwall/gjson v1.12.1
 	github.com/wdvxdr1123/ZeroBot v1.4.1
 )
 
@@ -58,8 +59,6 @@ require (
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
-	github.com/t-tomalak/logrus-easy-formatter v0.0.0-20190827215021-c074f06c5816 // indirect
-	github.com/tidwall/gjson v1.12.1 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tklauser/go-sysconf v0.3.9 // indirect
