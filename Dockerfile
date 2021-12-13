@@ -13,7 +13,7 @@ RUN set -ex \
     && go mod tidy\
     && chmod 755 `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.1/driver\
     && mv funcall.txt `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.1/driver/funcall.go\
-    && go build -ldflags "-s -w" -o cqhttp
+    && go build -ldflags "-s -w" -o cqhttp -trimpath
 
 FROM alpine:latest
 
