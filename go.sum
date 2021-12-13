@@ -7,6 +7,8 @@ github.com/FloatTech/AnimeAPI v1.1.10/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2
 github.com/FloatTech/ZeroBot-Plugin v1.1.5/go.mod h1:kWuUARvU7gs4xLggi8Sy37ja2GRL6k0X6kewe5TiZRs=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2 h1:/XhFJw2J0cOKqCd53X8t0wyVAXydFBbZHByVHEesUqk=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2/go.mod h1:M5DwJzq3tpPQBS5plj1h90qugwtp788BjXmMzZyi4Rg=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213135713-c9b06a4fa8be h1:4q4SGAi6lo9AV7D+PkpZGctVimdy0SrNHeeOOgmajYI=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213135713-c9b06a4fa8be/go.mod h1:DiNc9G92NncPIlJRtBUjijJ4o3RGKe6wPNEkouK963g=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4 h1:WW0BmmLLqAg+m6qGkrKbsfSIm91fkj3/udt3R7Myodo=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4/go.mod h1:W7ag6hml1pZTNzRXKU74OMr6rS8awQKSU+o2g7Gj4O0=
 github.com/FloatTech/ZeroBot-Plugin-Timer v1.4.3/go.mod h1:MVOQQ4e6AVGFm993blXXU4Sd6bAsLY2+Zb+/HMrEeEc=
@@ -60,6 +62,8 @@ github.com/fumiama/go-base16384 v1.2.1 h1:6OGprW8g/95m2ocmryHi8mipZ7bx9StFMZDKEq
 github.com/fumiama/go-base16384 v1.2.1/go.mod h1:1HTC0QFL7BjS0DuO5Qm+fBYKQkHqmAapLbRpCxrhPXQ=
 github.com/fumiama/go-hide-param v0.1.4 h1:y7TRTzZMdCH9GOXnIzU3B+1BSkcmvejVGmGsz4t0DGU=
 github.com/fumiama/go-hide-param v0.1.4/go.mod h1:vJkQlJIEI56nIyp7tCQu1/2QOyKtZpudsnJkGk9U1aY=
+github.com/fumiama/go-registry v0.0.2 h1:2EoZwZpqI7YhkQ1FnuAPvALYPpvUtbsCqk879+r7ehs=
+github.com/fumiama/go-registry v0.0.2/go.mod h1:QkcmmHuw1y6y/w7/HiH1c9yjBw5Zt+6EER6YJKl9xh8=
 github.com/fumiama/gofastTEA v0.0.5/go.mod h1:+sBZ05nCA2skZkursHNvyr8kULlEetrYTM2y5kA4rQc=
 github.com/fumiama/gofastTEA v0.0.6 h1:Yni3MXDbJVa/c4CecgdZDgCJK+fLdvGph+OBqY2mtiI=
 github.com/fumiama/gofastTEA v0.0.6/go.mod h1:+sBZ05nCA2skZkursHNvyr8kULlEetrYTM2y5kA4rQc=
@@ -69,6 +73,7 @@ github.com/gabriel-vasile/mimetype v1.4.0 h1:Cn9dkdYsMIu56tGho+fqzh7XmvY2YyGU0Fn
 github.com/gabriel-vasile/mimetype v1.4.0/go.mod h1:fA8fi6KUiG7MgQQ+mEWotXoEOvmxRtOJlERCzSmRvr8=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.7.5/go.mod h1:jD2toBW3GZUr5UMcdrwQA10I7RuaFOl/SGeDjXkfUtY=
+github.com/gin-gonic/gin v1.7.7/go.mod h1:axIBovoeJpVj8S3BwE0uPMTeReE4+AfFtqpqaZ1qq1U=
 github.com/go-ole/go-ole v1.2.5/go.mod h1:pprOEPIfldk/42T2oK7lQ4v4JSDwmV0As9GaiUsvbm0=
 github.com/go-ole/go-ole v1.2.6 h1:/Fpf6oFPoeFik9ty7siob0G6Ke8QvQEuVcuChpwXzpY=
 github.com/go-ole/go-ole v1.2.6/go.mod h1:pprOEPIfldk/42T2oK7lQ4v4JSDwmV0As9GaiUsvbm0=
@@ -249,6 +254,7 @@ github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5Cc
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/syndtr/goleveldb v1.0.0 h1:fBdIW9lB4Iz0n9khmH8w27SJ3QEJ7+IgjPEwGSZiFdE=
 github.com/syndtr/goleveldb v1.0.0/go.mod h1:ZVVdQEZoIme9iO1Ch2Jdy24qqXrMMOU6lpPAyBWyWuQ=
+github.com/t-tomalak/logrus-easy-formatter v0.0.0-20190827215021-c074f06c5816 h1:J6v8awz+me+xeb/cUTotKgceAYouhIB3pjzgRd6IlGk=
 github.com/t-tomalak/logrus-easy-formatter v0.0.0-20190827215021-c074f06c5816/go.mod h1:tzym/CEb5jnFI+Q0k4Qq3+LvRF4gO3E2pxS8fHP8jcA=
 github.com/tdf1939/ZeroBot-Plugin-Gif v0.0.0-20210828060956-389b1dc33652/go.mod h1:bkxKi7un9gCDvUUZAiIJF6k90pyj8rmxiXLJkiHcsMY=
 github.com/tdf1939/img v0.0.0-20210827153520-90cb4e9580a3/go.mod h1:FgTEOcosTWrkOr7++gbtPSj1rX5loRWrf/AL+hm3Cnw=
