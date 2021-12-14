@@ -54,6 +54,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_vtb_quotation" // vtb语录
 
 	// 以下为内置依赖，勿动
+	"github.com/fumiama/go-registry"
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/driver"
 	"github.com/wdvxdr1123/ZeroBot/message"
@@ -71,6 +72,7 @@ var (
 	}
 	banner = strings.Join(contents, "\n")
 	qqs    []string
+	reg    = registry.NewRegReader("reilia.eastasia.azurecontainer.io:32664", "fumiama")
 )
 
 func init() {
@@ -103,6 +105,21 @@ func init() {
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
 				ctx.SendChain(message.Text(banner))
+			})
+		zero.OnFullMatch("查看zbp公告", zero.OnlyToMe, zero.AdminPermission).SetBlock(true).FirstPriority().
+			Handle(func(ctx *zero.Ctx) {
+				err := reg.Connect()
+				defer reg.Close()
+				if err != nil {
+					ctx.SendChain(message.Text("ERROR:", err))
+					return
+				}
+				text, err := reg.Get("ZeroBot-Plugin/kanban")
+				if err != nil {
+					ctx.SendChain(message.Text("ERROR:", err))
+					return
+				}
+				ctx.SendChain(message.Text(text))
 			})
 		zero.Run(
 			zero.Config{

@@ -5,10 +5,12 @@ github.com/FloatTech/AnimeAPI v1.1.9/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2i
 github.com/FloatTech/AnimeAPI v1.1.10 h1:fYkv65P1HBukHi3GpzYulGx/xLshEL9635QXALDryf0=
 github.com/FloatTech/AnimeAPI v1.1.10/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2iLQsnUCVdDI=
 github.com/FloatTech/ZeroBot-Plugin v1.1.5/go.mod h1:kWuUARvU7gs4xLggi8Sy37ja2GRL6k0X6kewe5TiZRs=
-github.com/FloatTech/ZeroBot-Plugin v1.2.2 h1:/XhFJw2J0cOKqCd53X8t0wyVAXydFBbZHByVHEesUqk=
-github.com/FloatTech/ZeroBot-Plugin v1.2.2/go.mod h1:M5DwJzq3tpPQBS5plj1h90qugwtp788BjXmMzZyi4Rg=
-github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213135713-c9b06a4fa8be h1:4q4SGAi6lo9AV7D+PkpZGctVimdy0SrNHeeOOgmajYI=
-github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213135713-c9b06a4fa8be/go.mod h1:DiNc9G92NncPIlJRtBUjijJ4o3RGKe6wPNEkouK963g=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214053500-516d937149af h1:9wNoM0LaqrY628vk7v6XL/qR4u3L5pLGLTyLWyU1io0=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214053500-516d937149af/go.mod h1:DiNc9G92NncPIlJRtBUjijJ4o3RGKe6wPNEkouK963g=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214054124-4c1926e395e0 h1:zHJna2xQHEeRuASd2oMaIsU0DdjUdJkguULXQjH67EA=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214054124-4c1926e395e0/go.mod h1:DiNc9G92NncPIlJRtBUjijJ4o3RGKe6wPNEkouK963g=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214055115-65f9203597da h1:j7TwX7dgZEeerixLaRQlEpc9dl4cG99eV14GYldpevw=
+github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214055115-65f9203597da/go.mod h1:DiNc9G92NncPIlJRtBUjijJ4o3RGKe6wPNEkouK963g=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4 h1:WW0BmmLLqAg+m6qGkrKbsfSIm91fkj3/udt3R7Myodo=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4/go.mod h1:W7ag6hml1pZTNzRXKU74OMr6rS8awQKSU+o2g7Gj4O0=
 github.com/FloatTech/ZeroBot-Plugin-Timer v1.4.3/go.mod h1:MVOQQ4e6AVGFm993blXXU4Sd6bAsLY2+Zb+/HMrEeEc=
@@ -24,7 +26,6 @@ github.com/Mrs4s/MiraiGo v0.0.0-20211213125355-d55929cf1241/go.mod h1:YD9gBKkxC9
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211212183405-32aa82f91479 h1:rWs/WSASKGIGkUIV9vME2DV4pAbokLxE/NN2M9bN9fk=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211212183405-32aa82f91479/go.mod h1:D24m7g9e7dDhE4UPfKzNo4bo9/niaSUe4Q6Ad0hCiCo=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
-github.com/RomiChan/protobuf v0.0.0-20211202142450-893e94b43c21/go.mod h1:CKKOWC7mBxd36zxsCB1V8DTrwlTNRQvkSVbYqyUiGEE=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 h1:p4o7/eSoP39jwnGZz08N1IpH/mNzg9SdCn7kPM9A9BE=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737/go.mod h1:CKKOWC7mBxd36zxsCB1V8DTrwlTNRQvkSVbYqyUiGEE=
 github.com/StackExchange/wmi v1.2.1/go.mod h1:rcmrprowKIVzvc+NUiLncP2uuArMWLCbu9SBzvHz7e8=
@@ -64,7 +65,6 @@ github.com/fumiama/go-hide-param v0.1.4 h1:y7TRTzZMdCH9GOXnIzU3B+1BSkcmvejVGmGsz
 github.com/fumiama/go-hide-param v0.1.4/go.mod h1:vJkQlJIEI56nIyp7tCQu1/2QOyKtZpudsnJkGk9U1aY=
 github.com/fumiama/go-registry v0.0.2 h1:2EoZwZpqI7YhkQ1FnuAPvALYPpvUtbsCqk879+r7ehs=
 github.com/fumiama/go-registry v0.0.2/go.mod h1:QkcmmHuw1y6y/w7/HiH1c9yjBw5Zt+6EER6YJKl9xh8=
-github.com/fumiama/gofastTEA v0.0.5/go.mod h1:+sBZ05nCA2skZkursHNvyr8kULlEetrYTM2y5kA4rQc=
 github.com/fumiama/gofastTEA v0.0.6 h1:Yni3MXDbJVa/c4CecgdZDgCJK+fLdvGph+OBqY2mtiI=
 github.com/fumiama/gofastTEA v0.0.6/go.mod h1:+sBZ05nCA2skZkursHNvyr8kULlEetrYTM2y5kA4rQc=
 github.com/fumiama/gotracemoe v0.0.3 h1:iI5EbE9A3UUbfukG6+/soYPjp1S31eCNYf4tw7s6/Jc=
@@ -72,7 +72,6 @@ github.com/fumiama/gotracemoe v0.0.3/go.mod h1:tyqahdUzHf0bQIAVY/GYmDWvYYe5ik1Zb
 github.com/gabriel-vasile/mimetype v1.4.0 h1:Cn9dkdYsMIu56tGho+fqzh7XmvY2YyGU0FnbhiOsEro=
 github.com/gabriel-vasile/mimetype v1.4.0/go.mod h1:fA8fi6KUiG7MgQQ+mEWotXoEOvmxRtOJlERCzSmRvr8=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
-github.com/gin-gonic/gin v1.7.5/go.mod h1:jD2toBW3GZUr5UMcdrwQA10I7RuaFOl/SGeDjXkfUtY=
 github.com/gin-gonic/gin v1.7.7/go.mod h1:axIBovoeJpVj8S3BwE0uPMTeReE4+AfFtqpqaZ1qq1U=
 github.com/go-ole/go-ole v1.2.5/go.mod h1:pprOEPIfldk/42T2oK7lQ4v4JSDwmV0As9GaiUsvbm0=
 github.com/go-ole/go-ole v1.2.6 h1:/Fpf6oFPoeFik9ty7siob0G6Ke8QvQEuVcuChpwXzpY=
@@ -231,7 +230,6 @@ github.com/segmentio/asm v1.1.0/go.mod h1:4EUJGaKsB8ImLUwOGORVsNd9vTRDeh44JGsY4a
 github.com/segmentio/asm v1.1.3 h1:WM03sfUOENvvKexOLp+pCqgb/WDjsi7EK8gIsICtzhc=
 github.com/segmentio/asm v1.1.3/go.mod h1:Ld3L4ZXGNcSLRg4JBsZ3//1+f/TjYl0Mzen/DQy1EJg=
 github.com/shirou/gopsutil v3.21.8+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
-github.com/shirou/gopsutil v3.21.10+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
 github.com/shirou/gopsutil v3.21.11+incompatible h1:+1+c1VGhc88SSonWP6foOcLhvnKlUeu/erjjvaPEYiI=
 github.com/shirou/gopsutil v3.21.11+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
 github.com/sirupsen/logrus v1.4.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=

@@ -3,9 +3,10 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211213135713-c9b06a4fa8be
+	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20211214055115-65f9203597da
 	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4
 	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211212183405-32aa82f91479
+	github.com/fumiama/go-registry v0.0.2
 	github.com/tidwall/gjson v1.12.1
 	github.com/wdvxdr1123/ZeroBot v1.4.1
 )
@@ -27,7 +28,6 @@ require (
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.2.1 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
-	github.com/fumiama/go-registry v0.0.2 // indirect
 	github.com/fumiama/gofastTEA v0.0.6 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.0 // indirect
