@@ -9,6 +9,8 @@ github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta1 h1:5XGrlkIFNsKLIBFCZaCSjcB39jY7
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta1/go.mod h1:LeRvtBpQnPNmsov89z54e17ufHmzfu5D/xWQyIgec3Y=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2 h1:/EH6+vLQPpIesNNnq2SIgzW4BoVDs8q0j71N25a5T3M=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2/go.mod h1:NL7746hkVgb/u5BCVw8u5HS4Mu+V9Oo4wB+eAQT1n0g=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2.0.20211216082725-7eaac7a20b86 h1:EtnH8wu9fs/e2/jXZYLTXXO/pSP3tFwQzecn9jWt690=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2.0.20211216082725-7eaac7a20b86/go.mod h1:NL7746hkVgb/u5BCVw8u5HS4Mu+V9Oo4wB+eAQT1n0g=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2 h1:/XhFJw2J0cOKqCd53X8t0wyVAXydFBbZHByVHEesUqk=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2/go.mod h1:M5DwJzq3tpPQBS5plj1h90qugwtp788BjXmMzZyi4Rg=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4 h1:WW0BmmLLqAg+m6qGkrKbsfSIm91fkj3/udt3R7Myodo=
