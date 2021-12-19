@@ -4,6 +4,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/FloatTech/AnimeAPI v1.1.9/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2iLQsnUCVdDI=
 github.com/FloatTech/AnimeAPI v1.1.10 h1:fYkv65P1HBukHi3GpzYulGx/xLshEL9635QXALDryf0=
 github.com/FloatTech/AnimeAPI v1.1.10/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2iLQsnUCVdDI=
+github.com/FloatTech/AnimeAPI v1.1.11 h1:uuV4v5qweh0mI0E2KMiG5XGt0pKboV/EFAlIfSJxIi8=
+github.com/FloatTech/AnimeAPI v1.1.11/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2iLQsnUCVdDI=
 github.com/FloatTech/ZeroBot-Plugin v1.1.5/go.mod h1:kWuUARvU7gs4xLggi8Sy37ja2GRL6k0X6kewe5TiZRs=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta1 h1:5XGrlkIFNsKLIBFCZaCSjcB39jY70d7Ch2umPVs5PUo=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta1/go.mod h1:LeRvtBpQnPNmsov89z54e17ufHmzfu5D/xWQyIgec3Y=
@@ -11,6 +13,8 @@ github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2 h1:/EH6+vLQPpIesNNnq2SIgzW4BoVD
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2/go.mod h1:NL7746hkVgb/u5BCVw8u5HS4Mu+V9Oo4wB+eAQT1n0g=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2.0.20211216082725-7eaac7a20b86 h1:EtnH8wu9fs/e2/jXZYLTXXO/pSP3tFwQzecn9jWt690=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta2.0.20211216082725-7eaac7a20b86/go.mod h1:NL7746hkVgb/u5BCVw8u5HS4Mu+V9Oo4wB+eAQT1n0g=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta3 h1:3iO/tA5oF1CDAYVn6rmTpGYiDht7xgjdUG9nV5o84xs=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta3/go.mod h1:ZlTsP6yrdlQHX5IQauRKAmvcnFInaKUUzAmHWd6vSiE=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2 h1:/XhFJw2J0cOKqCd53X8t0wyVAXydFBbZHByVHEesUqk=
 github.com/FloatTech/ZeroBot-Plugin v1.2.2/go.mod h1:M5DwJzq3tpPQBS5plj1h90qugwtp788BjXmMzZyi4Rg=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4 h1:WW0BmmLLqAg+m6qGkrKbsfSIm91fkj3/udt3R7Myodo=
@@ -26,8 +30,12 @@ github.com/Mrs4s/MiraiGo v0.0.0-20211208080234-25c67a3ee1c1 h1:UipCzEST10GzJnvlh
 github.com/Mrs4s/MiraiGo v0.0.0-20211208080234-25c67a3ee1c1/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
 github.com/Mrs4s/MiraiGo v0.0.0-20211216072607-5a59cc656c48 h1:ZXofuoHtO8bWDSEAFJyho5qJyBjOdbLv/vDSn0d/rOI=
 github.com/Mrs4s/MiraiGo v0.0.0-20211216072607-5a59cc656c48/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
+github.com/Mrs4s/MiraiGo v0.0.0-20211219072930-afb81a32aa75 h1:4xgd1/lhAKHv/2sAbxbR38hDwt/HfOiWlVOqSJc544E=
+github.com/Mrs4s/MiraiGo v0.0.0-20211219072930-afb81a32aa75/go.mod h1:HI05ardsa5HE1Z2xTw69dytmaqqRWv4ajD5Jpnycqqw=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2 h1:sgFkSm/T8yFUscZL8Dc5EyIrwvgQM6SFsHiojB9gf1o=
 github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2/go.mod h1:qqBbg8VNg/u/fjRY9cX+wdhhpHOmMSN8jfpAl14EFGw=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211219074807-897119cbcae9 h1:1HUD3KdGiBuk1eos3BAJ9gmOuUMRdiOm4wGRVk8qZdQ=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211219074807-897119cbcae9/go.mod h1:Ln4IcAN/JlLtvMFs70RlURbA4xl2D5N7YBsp78ZvefI=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/RomiChan/protobuf v0.0.0-20211202142450-893e94b43c21/go.mod h1:CKKOWC7mBxd36zxsCB1V8DTrwlTNRQvkSVbYqyUiGEE=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 h1:p4o7/eSoP39jwnGZz08N1IpH/mNzg9SdCn7kPM9A9BE=
@@ -308,6 +316,8 @@ github.com/yuin/goldmark v1.4.1/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1
 github.com/yusufpapurcu/wmi v1.2.2 h1:KBNDSne4vP5mbSWnJbO+51IMOXJB67QiYCSBrubbPRg=
 github.com/yusufpapurcu/wmi v1.2.2/go.mod h1:SBZ9tNy3G9/m5Oi98Zks0QjeHVDvuK0qfxQmPyzfmi0=
 go.mongodb.org/mongo-driver v1.7.4/go.mod h1:NqaYOwnXWr5Pm7AOpO5QFxKJ503nbMse/R79oO62zWg=
+go.uber.org/atomic v1.9.0 h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE=
+go.uber.org/atomic v1.9.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
