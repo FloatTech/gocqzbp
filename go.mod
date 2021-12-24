@@ -3,10 +3,11 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta4.0.20211222103741-ce8d98b77d66
+	github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta5
 	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4
-	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211219144809-c775d91e1c9c
+	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2
 	github.com/fumiama/go-registry v0.0.2
+	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.12.1
 	github.com/wdvxdr1123/ZeroBot v1.4.1
 )
@@ -59,7 +60,6 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/segmentio/asm v1.1.3 // indirect
 	github.com/shirou/gopsutil/v3 v3.21.11 // indirect
-	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect

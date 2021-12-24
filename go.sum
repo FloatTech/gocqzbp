@@ -5,8 +5,8 @@ github.com/FloatTech/AnimeAPI v1.1.9/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2i
 github.com/FloatTech/AnimeAPI v1.1.11 h1:uuV4v5qweh0mI0E2KMiG5XGt0pKboV/EFAlIfSJxIi8=
 github.com/FloatTech/AnimeAPI v1.1.11/go.mod h1:CC+vF30UGBlcIUxwFOcXIEHoJ4r7c5x2iLQsnUCVdDI=
 github.com/FloatTech/ZeroBot-Plugin v1.1.5/go.mod h1:kWuUARvU7gs4xLggi8Sy37ja2GRL6k0X6kewe5TiZRs=
-github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta4.0.20211222103741-ce8d98b77d66 h1:0Iv31K1XgPd4reDGkp9oHufExNTfTc8elUH1+2nUKbc=
-github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta4.0.20211222103741-ce8d98b77d66/go.mod h1:ZlTsP6yrdlQHX5IQauRKAmvcnFInaKUUzAmHWd6vSiE=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta5 h1:gZmyNk6bPcZESODvZUHDMh5PR8umiSE6GY2J8w9wQqU=
+github.com/FloatTech/ZeroBot-Plugin v1.2.2-beta5/go.mod h1:ZlTsP6yrdlQHX5IQauRKAmvcnFInaKUUzAmHWd6vSiE=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4 h1:WW0BmmLLqAg+m6qGkrKbsfSIm91fkj3/udt3R7Myodo=
 github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4/go.mod h1:W7ag6hml1pZTNzRXKU74OMr6rS8awQKSU+o2g7Gj4O0=
 github.com/FloatTech/ZeroBot-Plugin-Timer v1.4.3/go.mod h1:MVOQQ4e6AVGFm993blXXU4Sd6bAsLY2+Zb+/HMrEeEc=
@@ -16,10 +16,11 @@ github.com/FloatTech/imgfactory v0.1.1/go.mod h1:ThDALab8aOuU6KVYESVWFqmjcqtm03e
 github.com/Microsoft/go-winio v0.5.1 h1:aPJp2QD7OOrhO5tQXqQoGSJc+DjDtWTGLOmNyAm6FgY=
 github.com/Microsoft/go-winio v0.5.1/go.mod h1:JPGBdM1cNvN/6ISo+n8V5iA4v8pBzdOpzfwIujj1a84=
 github.com/Mrs4s/MiraiGo v0.0.0-20211120033824-43b23f4e6fcb/go.mod h1:imVKbfKqqeit+C/eaWGb4MKQ3z3gN6pRpBU5RMtp5so=
+github.com/Mrs4s/MiraiGo v0.0.0-20211208080234-25c67a3ee1c1/go.mod h1:YD9gBKkxC9lPPtx3doYXRG26VBkK6YXjrS76cv01C5w=
 github.com/Mrs4s/MiraiGo v0.0.0-20211219072930-afb81a32aa75 h1:4xgd1/lhAKHv/2sAbxbR38hDwt/HfOiWlVOqSJc544E=
 github.com/Mrs4s/MiraiGo v0.0.0-20211219072930-afb81a32aa75/go.mod h1:HI05ardsa5HE1Z2xTw69dytmaqqRWv4ajD5Jpnycqqw=
-github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211219144809-c775d91e1c9c h1:G++7tA+X46Hp/4Ca3v1Rxt9+UEnaYI7xjRIbevLh258=
-github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2.0.20211219144809-c775d91e1c9c/go.mod h1:Ln4IcAN/JlLtvMFs70RlURbA4xl2D5N7YBsp78ZvefI=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2 h1:sgFkSm/T8yFUscZL8Dc5EyIrwvgQM6SFsHiojB9gf1o=
+github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2/go.mod h1:qqBbg8VNg/u/fjRY9cX+wdhhpHOmMSN8jfpAl14EFGw=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 h1:p4o7/eSoP39jwnGZz08N1IpH/mNzg9SdCn7kPM9A9BE=
 github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737/go.mod h1:CKKOWC7mBxd36zxsCB1V8DTrwlTNRQvkSVbYqyUiGEE=
