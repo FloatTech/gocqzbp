@@ -4,6 +4,8 @@ RUN go env -w GO111MODULE=on \
   && go env -w CGO_ENABLED=0 \
   && go env
 
+RUN apk update && apk add git
+
 WORKDIR /build
 
 COPY ./ .
