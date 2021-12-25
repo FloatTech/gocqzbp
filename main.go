@@ -21,6 +21,11 @@ var (
 	nofork = len(os.Args) > 1 && func() bool {
 		for i := len(os.Args) - 1; i >= 0; i-- {
 			if os.Args[i] == "nofork" {
+				if i == len(os.Args)-1 {
+					os.Args = os.Args[:i]
+				} else {
+					os.Args = append(os.Args[:i], os.Args[i+1:]...)
+				}
 				return true
 			}
 		}
@@ -29,6 +34,11 @@ var (
 	norecover = len(os.Args) > 1 && func() bool {
 		for i := len(os.Args) - 1; i >= 0; i-- {
 			if os.Args[i] == "norecover" {
+				if i == len(os.Args)-1 {
+					os.Args = os.Args[:i]
+				} else {
+					os.Args = append(os.Args[:i], os.Args[i+1:]...)
+				}
 				return true
 			}
 		}
