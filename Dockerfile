@@ -15,7 +15,7 @@ RUN set -ex \
     && mkdir -p `go env GOMODCACHE`/github.com \
     && chmod 755 `go env GOMODCACHE`/github.com \
     && git clone --depth=1 -b dev https://github.com/FloatTech/gocq.git `go env GOMODCACHE`/github.com/!mrs4s/go-cqhttp@v1.0.0-beta8-fix2 \
-    && go mod tidy\
+    && go mod tidy \
     && chmod 755 `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.1/driver\
     && mv funcall.txt `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.1/driver/funcall.go\
     && go build -ldflags "-s -w" -o cqhttp -trimpath
