@@ -9,9 +9,9 @@ import (
 	// 注：以下插件均可通过前面加 // 注释，注释后停用并不加载插件
 
 	// 词库类
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_atri"      // ATRI词库
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_chat"      // 基础词库
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_qingyunke" // 青云客
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_ai_reply" // 人工智能回复
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_atri"     // ATRI词库
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_chat"     // 基础词库
 
 	// 实用类
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_b14"          // base16384加解密
@@ -32,6 +32,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_chouxianghua" // 说抽象话
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_coser"        // 三次元小姐姐
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_cpstory"      // cp短打
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_curse"        // 骂人
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_fortune"      // 运势
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_funny"        // 笑话
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_hs"           // 炉石
@@ -43,6 +44,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_novel"        // 铅笔小说网搜索
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_omikuji"      // 浅草寺求签
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_reborn"       // 投胎
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_score"        // 分数
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_shadiao"      // 沙雕app
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_shindan"      // 测定
 
@@ -75,13 +77,13 @@ import (
 var (
 	contents = []string{
 		"* OneBot + go-cqhttp + ZeroBot + Golang",
-		"* Version 1.2.2g - 2021-12-13 21:22:45 +0800 CST",
+		"* Version 1.2.3g - 2021-12-13 21:22:45 +0800 CST",
 		"* Copyright © 2020 - 2021 FloatTech. All Rights Reserved.",
 		"* Project: https://github.com/FloatTech/ZeroBot-Plugin",
 	}
 	banner = strings.Join(contents, "\n")
 	qqs    []string
-	reg    = registry.NewRegReader("reilia.eastasia.azurecontainer.io:32664", "fumiama")
+	reg    = registry.NewRegReader("reilia.fumiama.top:32664", "fumiama")
 )
 
 func init() {
@@ -139,9 +141,8 @@ func init() {
 				NickName:      []string{"椛椛", "ATRI", "atri", "亚托莉", "アトリ"},
 				CommandPrefix: "/",
 				// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
-				// "12345678", "87654321"：通过代码写死的方式添加主人账号
-				// flag.Args()：通过命令行参数的方式添加主人账号，无需修改下方任何代码
-				SuperUsers: append([]string{"12345678", "87654321"}, qqs...),
+				// SuperUsers: []string{"12345678", "87654321"}, // 通过代码写死的方式添加主人账号
+				SuperUsers: qqs, // 通过命令行参数的方式添加主人账号
 				Driver:     []zero.Driver{f},
 			},
 		)

@@ -3,8 +3,8 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.2.3-0.20220102170035-2ff229e9d963
-	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.4
+	github.com/FloatTech/ZeroBot-Plugin v1.2.3-beta2.0.20220111034125-8279ed31d1ab
+	github.com/FloatTech/ZeroBot-Plugin-Gif v0.2.5
 	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2
 	github.com/fumiama/go-registry v0.0.2
 	github.com/sirupsen/logrus v1.8.1
@@ -14,8 +14,10 @@ require (
 
 require (
 	github.com/Baozisoftware/qrcode-terminal-go v0.0.0-20170407111555-c0650d8dff0f // indirect
-	github.com/FloatTech/AnimeAPI v1.1.11 // indirect
+	github.com/FloatTech/AnimeAPI v1.1.12 // indirect
 	github.com/FloatTech/imgfactory v0.1.1 // indirect
+	github.com/FloatTech/zbpctrl v1.2.3 // indirect
+	github.com/FloatTech/zbputils v1.2.3 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20211219072930-afb81a32aa75 // indirect
 	github.com/RomiChan/protobuf v0.0.0-20211204042931-ff4f35848737 // indirect
@@ -74,7 +76,7 @@ require (
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410 // indirect
 	golang.org/x/mod v0.5.1 // indirect
-	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f // indirect
+	golang.org/x/net v0.0.0-20220105145211-5b0dc2dfae98 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
