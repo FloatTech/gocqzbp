@@ -10,6 +10,8 @@ WORKDIR /build
 
 COPY ./ .
 
+RUN ls
+
 RUN set -ex \
     && cd /build \
     && mkdir -p `go env GOMODCACHE`/github.com \
