@@ -78,7 +78,7 @@ import (
 var (
 	contents = []string{
 		"* OneBot + go-cqhttp + ZeroBot + Golang",
-		"* Version 1.2.3g - 2021-12-13 21:22:45 +0800 CST",
+		"* Version 1.2.4g - 2021-12-13 21:22:45 +0800 CST",
 		"* Copyright © 2020 - 2021 FloatTech. All Rights Reserved.",
 		"* Project: https://github.com/FloatTech/ZeroBot-Plugin",
 	}
