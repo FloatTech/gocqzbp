@@ -23,22 +23,20 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_translation"  // 翻译
 
 	// 娱乐类
-	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin_wtf"    // 鬼东西
-	_ "github.com/FloatTech/ZeroBot-Plugin-Gif"                 // 制图
+	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin_wtf"       // 鬼东西
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_ai_false"     // 服务器监控
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_book_review"  // 哀伤雪刃吧推书记录
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_cangtoushi"   // 藏头诗
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_choose"       // 选择困难症帮手
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_chouxianghua" // 说抽象话
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_coser"        // 三次元小姐姐
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_cpstory"      // cp短打
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_curse"        // 骂人
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_fortune"      // 运势
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_funny"        // 笑话
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_gif"          // 制图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_hs"           // 炉石
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_juejuezi"     // 绝绝子生成器
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_minecraft"    // MCSManager
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_mocking_bird" // 拟声鸟
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_moyu"         // 摸鱼
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_music"        // 点歌
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_novel"        // 铅笔小说网搜索
@@ -50,11 +48,14 @@ import (
 
 	// b站相关
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili" // 查询b站用户信息
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_diana"    // 嘉心糖发病
+	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili_push" // b站推送
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_diana" // 嘉心糖发病
 
 	// 二次元图片
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_acgimage"      // 随机图片与AI点评
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_aiwife"        // 随机老婆
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_coser"         // 三次元小姐姐
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_danbooru"      // DeepDanbooru二次元图标签识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_image_finder"  // 关键字搜图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_lolicon"       // lolicon 随机图片
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_nativesetu"    // 本地涩图
