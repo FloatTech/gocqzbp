@@ -8,12 +8,9 @@ RUN apk update && apk add git
 
 WORKDIR /build
 
-COPY ./ /build/
+COPY ./ .
 
-RUN ls
-
-RUN set -ex \
-    && cd /build \
+RUN set -ex && chmod 644 * \
     && mkdir -p `go env GOMODCACHE`/github.com \
     && chmod 755 `go env GOMODCACHE`/github.com \
     && git clone --depth=1 -b dev https://github.com/FloatTech/gocq.git `go env GOMODCACHE`/github.com/!mrs4s/go-cqhttp@v1.0.0-beta8-fix2 \
