@@ -9,5 +9,8 @@ require (
 )
 
 require (
+	github.com/FloatTech/AnimeAPI v1.2.4-fix12 // indirect
+	github.com/FloatTech/zbputils v1.2.4-fix6 // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20220117165008-3b461554b747 // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220123145318-307a86b127bc // indirect
 )
