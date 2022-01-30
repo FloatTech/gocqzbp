@@ -48,7 +48,9 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_wangyiyun"    // 网易云音乐热评
 
 	// b站相关
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili" // 查询b站用户信息
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili"       // 查询b站用户信息
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili_parse" // b站视频链接解析
+
 	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin_bilibili_push" // b站推送
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_diana" // 嘉心糖发病
 
@@ -79,7 +81,7 @@ import (
 var (
 	contents = []string{
 		"* OneBot + go-cqhttp + ZeroBot + Golang",
-		"* Version 1.2.4g - 2021-12-13 21:22:45 +0800 CST",
+		"* Version 1.2.5g - 2021-01-30 20:13:28 +0800 CST",
 		"* Copyright © 2020 - 2021 FloatTech. All Rights Reserved.",
 		"* Project: https://github.com/FloatTech/ZeroBot-Plugin",
 	}

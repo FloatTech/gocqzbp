@@ -14,7 +14,7 @@ RUN set -ex \
     && mkdir -p `go env GOMODCACHE`/github.com \
     && chmod 755 `go env GOMODCACHE`/github.com \
     && git clone --depth=1 -b dev https://github.com/FloatTech/gocq.git `go env GOMODCACHE`/github.com/!mrs4s/go-cqhttp@v1.0.0-beta8-fix2 \
-    && git clone --depth=1 https://github.com/FloatTech/ZeroBot.git `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.2-0.20220122162257-bc71c479f3d1 \
+    && git clone --depth=1 https://github.com/FloatTech/ZeroBot.git `go env GOMODCACHE`/github.com/wdvxdr1123/!zero!bot@v1.4.2-0.20220127075442-eb7b296fc97e \
     && go mod tidy -compat=1.17 \
     && go build -ldflags "-s -w" -o cqhttp -trimpath
 
