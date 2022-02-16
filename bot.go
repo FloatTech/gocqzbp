@@ -30,6 +30,8 @@ import (
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_manager" // 群管
 
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_thesaurus" // 词典匹配回复
+
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
 	//                      ^^^^^^^高优先级区^^^^^^^                      //
@@ -62,6 +64,8 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_cpstory"        // cp短打
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_danbooru"       // DeepDanbooru二次元图标签识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_diana"          // 嘉心糖发病
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_drift_bottle"   // 漂流瓶
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_emojimix"       // 合成emoji
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_fortune"        // 运势
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_funny"          // 笑话
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin_gif"            // 制图
