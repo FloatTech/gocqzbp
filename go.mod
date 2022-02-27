@@ -13,7 +13,7 @@ require (
 
 replace (
 	github.com/Mrs4s/MiraiGo => github.com/fumiama/MiraiGo v0.0.0-20220224124515-df63c994e488
-	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220227064847-2429d496cbf2
+	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220227072153-e1eef2cfc0dd
 	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.13
 )
 
