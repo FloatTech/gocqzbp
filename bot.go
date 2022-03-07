@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"strconv"
-	"strings"
+
+	"github.com/FloatTech/ZeroBot-Plugin/kanban" // 在最前打印 banner
 
 	// ---------以下插件均可通过前面加 // 注释，注释后停用并不加载插件--------- //
 	// ----------------------插件优先级按顺序从高到低---------------------- //
@@ -74,6 +74,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/hs"             // 炉石
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/image_finder"   // 关键字搜图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/jandan"         // 煎蛋网无聊图
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/job"            // 定时指令触发器
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/juejuezi"       // 绝绝子生成器
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/lolicon"        // lolicon 随机图片
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/moyu"           // 摸鱼
@@ -137,7 +138,7 @@ import (
 	//                                                                  //
 	//                                                                  //
 	// -----------------------以下为内置依赖，勿动------------------------ //
-	"github.com/fumiama/go-registry"
+	"github.com/FloatTech/zbputils/process"
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/driver"
 	"github.com/wdvxdr1123/ZeroBot/message"
@@ -147,20 +148,9 @@ import (
 	// -----------------------以上为内置依赖，勿动------------------------ //
 )
 
-var (
-	contents = []string{
-		"* OneBot + go-cqhttp + ZeroBot + Golang",
-		"* Version 1.3.0g - 2021-02-09 19:04:23 +0800 CST",
-		"* Copyright © 2020 - 2021 FloatTech. All Rights Reserved.",
-		"* Project: https://github.com/FloatTech/ZeroBot-Plugin",
-	}
-	banner = strings.Join(contents, "\n")
-	qqs    []string
-	reg    = registry.NewRegReader("reilia.fumiama.top:32664", "fumiama")
-)
-
 func init() {
 	arg := os.Args
+	var qqs []string
 	if len(arg) > 1 {
 		for _, a := range arg {
 			i, err := strconv.ParseUint(a, 10, 64)
@@ -169,45 +159,18 @@ func init() {
 			}
 		}
 	}
-}
-
-func printBanner() {
-	fmt.Print(
-		"\n======================[ZeroBot-Plugin]======================",
-		"\n", banner, "\n",
-		"----------------------[ZeroBot-公告栏]----------------------",
-		"\n", getKanban(), "\n",
-		"============================================================\n",
-	)
-}
-
-func getKanban() string {
-	err := reg.Connect()
-	defer reg.Close()
-	if err != nil {
-		return err.Error()
-	}
-	text, err := reg.Get("ZeroBot-Plugin/kanban")
-	if err != nil {
-		return err.Error()
-	}
-	return text
-}
-
-func init() {
 	driver.RegisterServer(func(s string, f func(driver.CQBot)) {
 		servers.RegisterCustom(s, func(c *coolq.CQBot) { f((*CQBot)(c)) })
 	})
 	driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
-		printBanner()
 		// 帮助
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
-				ctx.SendChain(message.Text(banner))
+				ctx.SendChain(message.Text(kanban.Banner))
 			})
 		zero.OnFullMatch("查看zbp公告", zero.OnlyToMe, zero.AdminPermission).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
-				ctx.SendChain(message.Text(getKanban()))
+				ctx.SendChain(message.Text(kanban.Kanban()))
 			})
 		zero.Run(
 			zero.Config{
@@ -219,5 +182,6 @@ func init() {
 				Driver:     []zero.Driver{f},
 			},
 		)
+		process.GlobalInitMutex.Unlock()
 	})
 }

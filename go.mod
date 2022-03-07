@@ -3,9 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.1-beta1
+	github.com/FloatTech/ZeroBot-Plugin v1.3.1-beta3
+	github.com/FloatTech/zbputils v1.3.1-0.20220307063102-42185420359d
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
-	github.com/fumiama/go-registry v0.1.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
 	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220304040741-8e53f210618c
@@ -18,9 +18,8 @@ replace (
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.1-0.20220304041505-1de3dbdc8423 // indirect
-	github.com/FloatTech/sqlite v0.2.0 // indirect
-	github.com/FloatTech/zbputils v1.3.1-0.20220304041409-6607dccd2a10 // indirect
+	github.com/FloatTech/AnimeAPI v1.3.1-0.20220307053346-aa76aec4b635 // indirect
+	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220301053927-15a746802b1e // indirect
 	github.com/RomiChan/protobuf v0.0.0-20220227114948-643565fff248 // indirect
@@ -34,6 +33,7 @@ require (
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.3.0 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
+	github.com/fumiama/go-registry v0.1.1 // indirect
 	github.com/fumiama/gofastTEA v0.0.9 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/fumiama/imgsz v0.0.2 // indirect
