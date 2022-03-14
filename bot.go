@@ -1,7 +1,7 @@
 package main
 
 import (
-	"os"
+	"flag"
 	"strconv"
 
 	"github.com/FloatTech/ZeroBot-Plugin/kanban" // 在最前打印 banner
@@ -147,13 +147,25 @@ import (
 	"github.com/wdvxdr1123/ZeroBot/driver"
 	"github.com/wdvxdr1123/ZeroBot/message"
 
+	"github.com/Mrs4s/go-cqhttp/cmd/gocq"
 	"github.com/Mrs4s/go-cqhttp/coolq"
 	"github.com/Mrs4s/go-cqhttp/modules/servers"
 	// -----------------------以上为内置依赖，勿动------------------------ //
 )
 
+var (
+	nicks  = []string{"ATRI", "atri", "亚托莉", "アトリ"}
+	adana  *string
+	prefix *string
+)
+
 func init() {
-	arg := os.Args
+	// 默认昵称
+	adana = flag.String("n", "椛椛", "Set default nickname.")
+	prefix = flag.String("p", "/", "Set command prefix.")
+	gocq.InitBase()
+
+	arg := flag.Args()
 	var qqs []string
 	if len(arg) > 1 {
 		for _, a := range arg {
@@ -163,9 +175,11 @@ func init() {
 			}
 		}
 	}
+
 	driver.RegisterServer(func(s string, f func(driver.CQBot)) {
 		servers.RegisterCustom(s, func(c *coolq.CQBot) { f((*CQBot)(c)) })
 	})
+
 	driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
 		// 帮助
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().
@@ -178,8 +192,8 @@ func init() {
 			})
 		zero.Run(
 			zero.Config{
-				NickName:      []string{"椛椛", "ATRI", "atri", "亚托莉", "アトリ"},
-				CommandPrefix: "/",
+				NickName:      append([]string{*adana}, nicks...),
+				CommandPrefix: *prefix,
 				// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
 				// SuperUsers: []string{"12345678", "87654321"}, // 通过代码写死的方式添加主人账号
 				SuperUsers: qqs, // 通过命令行参数的方式添加主人账号

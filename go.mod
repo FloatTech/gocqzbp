@@ -3,22 +3,22 @@ module github.com/FloatTech/gocqzbp
 go 1.17
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.1-fix2
-	github.com/FloatTech/zbputils v1.3.1
+	github.com/FloatTech/ZeroBot-Plugin v1.3.2-0.20220314045050-2f63253ec028
+	github.com/FloatTech/zbputils v1.3.2-0.20220314044107-57422e361dfb
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
-	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220307142419-a1b34e6da007
+	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220314043738-2ff63b4ac217
 )
 
 replace (
 	github.com/Mrs4s/MiraiGo => github.com/fumiama/MiraiGo v0.0.0-20220224124515-df63c994e488
 	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220227072153-e1eef2cfc0dd
-	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.14
+	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.15
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.1 // indirect
+	github.com/FloatTech/AnimeAPI v1.3.2-0.20220314044324-0b70ea7aef90 // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220301053927-15a746802b1e // indirect

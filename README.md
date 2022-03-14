@@ -19,16 +19,22 @@ _✨ 同时融合了[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin
 文档请参考[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，默认开启[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin)，无需任何额外操作即可使用。
 
 ## 命令行参数
-除与[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)一致的参数外，还可以附加任意个数的qq号作为管理员`SuperUser`
+除与[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)一致的参数外，还可以附加任意个数的qq号作为主人`SuperUser`，并使用`-n`参数指定昵称，使用`-p`参数指定指令前缀。
 ```bash
-./gocqzbp [-D] [-c config.yml] [-d] [-h] [-w] [faststart] [key xxxx] qq1 qq2 qq3 ...
+./gocqzbp [-D] [-c config.yml] [-d] [-h] [-n nickname] [-p prefix] [-w] [-faststart] [key xxxx] qq1 qq2 qq3 ...
 
 Options:
   -D    debug mode
   -c string
         configuration filename (default "config.yml")
   -d    running as a daemon
+  -faststart
+        skip waiting 5 seconds
   -h    this Help
+  -n string
+        Set default nickname. (default "椛椛")
+  -p string
+        Set command prefix. (default "/")
   -w string
         cover the working directory
 ```

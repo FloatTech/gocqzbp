@@ -47,7 +47,6 @@ var (
 )
 
 func main() {
-	gocq.InitBase()
 	gocq.InitLog()
 	gocq.CheckDoubleClick()
 
