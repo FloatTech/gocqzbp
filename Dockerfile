@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine AS builder
+FROM golang:1.18-alpine AS builder
 
 RUN go env -w GO111MODULE=on \
   && go env -w CGO_ENABLED=0 \
@@ -11,7 +11,7 @@ WORKDIR /build
 COPY ./ .
 
 RUN set -ex \
-    && go mod tidy -compat=1.17 \
+    && go mod tidy \
     && go build -ldflags "-s -w" -o cqhttp -trimpath
 
 FROM alpine:latest
