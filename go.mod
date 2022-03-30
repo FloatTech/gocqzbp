@@ -3,22 +3,22 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.2-beta5.0.20220329082929-bcad2c499883
-	github.com/FloatTech/zbputils v1.3.2-0.20220329082434-351642935868
+	github.com/FloatTech/ZeroBot-Plugin v1.3.2-beta6.0.20220330052352-8e4c496b5461
+	github.com/FloatTech/zbputils v1.3.2-0.20220330051507-f26fec6ab9d8
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
-	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220326160643-893d4e910785
+	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220330050111-d962c23b4f4d
 )
 
 replace (
 	github.com/Mrs4s/MiraiGo => github.com/fumiama/MiraiGo v0.0.0-20220329090848-0fd0b02e41eb
 	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220329090732-eac88702617c
-	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.17
+	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.18
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.2-0.20220329082710-181759e71c95 // indirect
+	github.com/FloatTech/AnimeAPI v1.3.2-0.20220330051608-0599bc2286fc // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220328072759-e2a42e542581 // indirect
@@ -48,7 +48,7 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible // indirect
 	github.com/lestrrat-go/strftime v1.0.5 // indirect
-	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
+	github.com/lufia/plan9stats v0.0.0-20220326011226-f1430873d8db // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mroth/weightedrand v0.4.1 // indirect
@@ -65,14 +65,14 @@ require (
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/tklauser/numcpus v0.4.0 // indirect
-	github.com/wdvxdr1123/go-silk v0.0.0-20210316130616-d47b553def60 // indirect
+	github.com/wdvxdr1123/go-silk v0.0.0-20220304095002-f67345df09ea // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20220321153916-2c7772ba3064 // indirect
 	golang.org/x/image v0.0.0-20220321031419-a8550c1d254a // indirect
-	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
+	golang.org/x/net v0.0.0-20220325170049-de3da57026de // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20220327210214-530d0810a4d0 // indirect
+	golang.org/x/sys v0.0.0-20220330033206-e17cdc41300f // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220224211638-0e9765cccd65 // indirect
