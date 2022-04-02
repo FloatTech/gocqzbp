@@ -3,8 +3,8 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.2-beta6.0.20220330052352-8e4c496b5461
-	github.com/FloatTech/zbputils v1.3.2-0.20220330051507-f26fec6ab9d8
+	github.com/FloatTech/ZeroBot-Plugin v1.3.2-fix1
+	github.com/FloatTech/zbputils v1.3.2
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
@@ -18,7 +18,7 @@ replace (
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.2-0.20220330051608-0599bc2286fc // indirect
+	github.com/FloatTech/AnimeAPI v1.3.2 // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220328072759-e2a42e542581 // indirect
