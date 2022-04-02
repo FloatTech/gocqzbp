@@ -5,6 +5,7 @@ import (
 	"strconv"
 
 	"github.com/FloatTech/ZeroBot-Plugin/kanban" // 在最前打印 banner
+	"github.com/sirupsen/logrus"
 
 	// ---------以下插件均可通过前面加 // 注释，注释后停用并不加载插件--------- //
 	// ----------------------插件优先级按顺序从高到低---------------------- //
@@ -33,6 +34,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/thesaurus" // 词典匹配回复
 
 	_ "github.com/FloatTech/zbputils/job" // 定时指令触发器
+	"github.com/FloatTech/zbputils/process"
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -180,11 +182,7 @@ func init() {
 		}
 	}
 
-	driver.RegisterServer(func(s string, f func(driver.CQBot)) {
-		servers.RegisterCustom(s, func(c *coolq.CQBot) { f((*CQBot)(c)) })
-	})
-
-	driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
+	_ = driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
 		// 帮助
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
@@ -204,5 +202,13 @@ func init() {
 				Driver:     []zero.Driver{f},
 			},
 		)
+		logrus.Debugln("[bot] set superusers:", qqs)
+	})
+
+	driver.RegisterServer(func(s string, f func(driver.CQBot)) {
+		servers.RegisterCustom(s, func(c *coolq.CQBot) {
+			f((*CQBot)(c))
+			process.GlobalInitMutex.Unlock()
+		})
 	})
 }
