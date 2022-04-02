@@ -146,7 +146,7 @@ import (
 	//                                                                  //
 	//                                                                  //
 	// -----------------------以下为内置依赖，勿动------------------------ //
-	"github.com/FloatTech/zbputils/process"
+
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/driver"
 	"github.com/wdvxdr1123/ZeroBot/message"
@@ -171,7 +171,7 @@ func init() {
 
 	arg := flag.Args()
 	var qqs []string
-	if len(arg) > 1 {
+	if len(arg) > 0 {
 		for _, a := range arg {
 			i, err := strconv.ParseUint(a, 10, 64)
 			if err == nil {
@@ -204,6 +204,5 @@ func init() {
 				Driver:     []zero.Driver{f},
 			},
 		)
-		process.GlobalInitMutex.Unlock()
 	})
 }
