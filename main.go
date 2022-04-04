@@ -54,7 +54,7 @@ func main() {
 			err := runChild()
 			logrus.Errorln("子进程退出，重启中:", err)
 			time.Sleep(time.Second)
-			if _, err = os.Stat(os.Args[0]); err != nil {
+			if _, err = os.Stat(os.Args[0]); err != nil && (os.Args[0][0] == '.' || os.Args[0][0] == '/' || os.Args[0][1] == ':') {
 				logrus.Errorln("可执行文件被删除，将使用自身进程作恢复处理，如再崩溃则无法二次恢复")
 				break
 			}
