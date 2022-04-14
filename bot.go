@@ -172,12 +172,12 @@ func init() {
 	gocq.InitBase()
 
 	arg := flag.Args()
-	var qqs []string
+	var qqs []int64
 	if len(arg) > 0 {
 		for _, a := range arg {
-			i, err := strconv.ParseUint(a, 10, 64)
+			i, err := strconv.ParseInt(a, 10, 64)
 			if err == nil {
-				qqs = append(qqs, strconv.FormatUint(i, 10))
+				qqs = append(qqs, i)
 			}
 		}
 	}
