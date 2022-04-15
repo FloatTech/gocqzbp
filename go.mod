@@ -3,22 +3,22 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.3-beta4
-	github.com/FloatTech/zbputils v1.3.3-0.20220414074216-3fe2fb332371
+	github.com/FloatTech/ZeroBot-Plugin v1.3.3-beta5
+	github.com/FloatTech/zbputils v1.3.3-0.20220415072510-2833c397c253
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
-	github.com/wdvxdr1123/ZeroBot v1.4.2-0.20220414063422-1ca81bc47496
+	github.com/wdvxdr1123/ZeroBot v1.5.0-mid.0.20220415071800-9e52436ab5c0
 )
 
 replace (
 	github.com/Mrs4s/MiraiGo => github.com/fumiama/MiraiGo v0.0.0-20220406031925-705743130924
 	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220406042056-9d1796ee9293
-	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.19
+	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.5.1-0.20220415071608-e9cb8ae1d402
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.3-0.20220414074426-878b31943a9b // indirect
+	github.com/FloatTech/AnimeAPI v1.3.3-0.20220415072648-32d1101a65a4 // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220405134734-9cb9e80d99d8 // indirect
@@ -59,7 +59,7 @@ require (
 	github.com/power-devops/perfstat v0.0.0-20220216144756-c35f1ee13d7c // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/segmentio/asm v1.1.3 // indirect
-	github.com/shirou/gopsutil/v3 v3.22.2 // indirect
+	github.com/shirou/gopsutil/v3 v3.22.3 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
@@ -69,16 +69,16 @@ require (
 	github.com/wdvxdr1123/go-silk v0.0.0-20220304095002-f67345df09ea // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/crypto v0.0.0-20220321153916-2c7772ba3064 // indirect
-	golang.org/x/image v0.0.0-20220321031419-a8550c1d254a // indirect
-	golang.org/x/net v0.0.0-20220325170049-de3da57026de // indirect
+	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
+	golang.org/x/image v0.0.0-20220413100746-70e8d0d3baa9 // indirect
+	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20220330033206-e17cdc41300f // indirect
+	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220224211638-0e9765cccd65 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
-	modernc.org/libc v1.14.12 // indirect
+	modernc.org/libc v1.15.0 // indirect
 	modernc.org/mathutil v1.4.1 // indirect
 	modernc.org/memory v1.0.7 // indirect
 )
