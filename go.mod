@@ -3,8 +3,8 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.3.3-beta5
-	github.com/FloatTech/zbputils v1.3.3-0.20220415072510-2833c397c253
+	github.com/FloatTech/ZeroBot-Plugin v1.3.3-beta7
+	github.com/FloatTech/zbputils v1.3.3-0.20220417132003-a50e9afdc0c6
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
@@ -18,7 +18,7 @@ replace (
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.3-0.20220415072648-32d1101a65a4 // indirect
+	github.com/FloatTech/AnimeAPI v1.3.3-0.20220417132103-df55797131af // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220405134734-9cb9e80d99d8 // indirect
@@ -34,7 +34,7 @@ require (
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.4.0 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
-	github.com/fumiama/go-registry v0.1.3 // indirect
+	github.com/fumiama/go-registry v0.1.5 // indirect
 	github.com/fumiama/gofastTEA v0.0.10 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/fumiama/imgsz v0.0.2 // indirect
