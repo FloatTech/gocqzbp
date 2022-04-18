@@ -185,7 +185,7 @@ func init() {
 
 	_ = driver.NewFuncallClient("zbp", newcaller, func(f *driver.FCClient) {
 		
-		zero.OnFullMatch("查看zbp公告", zero.OnlyToMe, zero.AdminPermission).SetBlock(true).FirstPriority().
+		zero.OnFullMatch("查看公告", zero.OnlyToMe, zero.AdminPermission).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
 				ctx.SendChain(message.Text(kanban.Kanban()))
 			})
