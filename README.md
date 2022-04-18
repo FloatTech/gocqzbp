@@ -32,7 +32,7 @@ Options:
         skip waiting 5 seconds
   -h    this Help
   -n string
-        Set default nickname. (default "椛椛")
+        Set default nickname. (default "派蒙")
   -p string
         Set command prefix. (default "/")
   -w string
