@@ -34,7 +34,6 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/thesaurus" // 词典匹配回复
 
 	_ "github.com/FloatTech/zbputils/job" // 定时指令触发器
-	"github.com/FloatTech/zbputils/process"
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -149,6 +148,7 @@ import (
 	//                                                                  //
 	// -----------------------以下为内置依赖，勿动------------------------ //
 
+	"github.com/FloatTech/zbputils/process"
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/driver"
 	"github.com/wdvxdr1123/ZeroBot/message"
