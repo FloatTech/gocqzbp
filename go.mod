@@ -3,8 +3,8 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.4.0-beta5
-	github.com/FloatTech/zbputils v1.3.4-0.20220509040909-1ba8aa47f58e
+	github.com/FloatTech/ZeroBot-Plugin v1.4.0-beta6.0.20220510153409-c94b9f54ce9c
+	github.com/FloatTech/zbputils v1.4.0
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.1
@@ -12,10 +12,10 @@ require (
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.3.4-0.20220509041030-b9aee01996bc // indirect
+	github.com/FloatTech/AnimeAPI v1.4.1-0.20220510153300-44a0551f6f51 // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20220428155502-a4cf95f79352 // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20220510113536-fba6bc90e262 // indirect
 	github.com/RomiChan/protobuf v0.0.0-20220318113238-d8a99598f896 // indirect
 	github.com/RomiChan/syncx v0.0.0-20220404072119-d7ea0ae15a4c // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220123145318-307a86b127bc // indirect
@@ -77,7 +77,4 @@ require (
 	modernc.org/memory v1.0.5 // indirect
 )
 
-replace (
-	github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220430104851-e65ed17db473
-	github.com/wdvxdr1123/ZeroBot => github.com/FloatTech/ZeroBot v1.4.2-0.20220509035822-e5a2a9edd6ac
-)
+replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220430104851-e65ed17db473

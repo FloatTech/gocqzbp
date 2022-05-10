@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/FloatTech/zbputils/driver"
 	"github.com/Mrs4s/go-cqhttp/coolq"
 	"github.com/Mrs4s/go-cqhttp/modules/api"
 	"github.com/tidwall/gjson"
-	"github.com/wdvxdr1123/ZeroBot/driver"
 )
 
 type CQBot coolq.CQBot
