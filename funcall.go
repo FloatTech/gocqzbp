@@ -16,7 +16,10 @@ func (bot *CQBot) OnEventPush(f func(driver.Event)) {
 type Event coolq.Event
 
 func (e *Event) JSONBytes() []byte {
-	return (*coolq.Event)(e).JSONBytes()
+	b := (*coolq.Event)(e).JSONBytes()
+	bb := make([]byte, len(b))
+	copy(bb, b)
+	return bb
 }
 
 func (e *Event) RawMSG() driver.MSG {
