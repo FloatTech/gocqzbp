@@ -3,8 +3,8 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.4.0-beta6.0.20220510153409-c94b9f54ce9c
-	github.com/FloatTech/zbputils v1.4.0
+	github.com/FloatTech/ZeroBot-Plugin v1.4.0-beta7
+	github.com/FloatTech/zbputils v1.4.1-0.20220510155433-a0cc1629b1df
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.1
@@ -12,7 +12,7 @@ require (
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.4.1-0.20220510153300-44a0551f6f51 // indirect
+	github.com/FloatTech/AnimeAPI v1.4.1-0.20220512034947-4dd25b414348 // indirect
 	github.com/FloatTech/sqlite v0.2.1 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220510113536-fba6bc90e262 // indirect
@@ -33,6 +33,7 @@ require (
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/fumiama/imgsz v0.0.2 // indirect
 	github.com/fumiama/sqlite3 v1.14.6 // indirect
+	github.com/gabriel-vasile/mimetype v1.0.4 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
@@ -40,6 +41,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/jinzhu/gorm v1.9.16 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jozsefsallai/gophersauce v1.0.1 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible // indirect
 	github.com/lestrrat-go/strftime v1.0.5 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
