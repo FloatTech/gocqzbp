@@ -23,7 +23,7 @@ func (e *Event) JSONBytes() []byte {
 }
 
 func (e *Event) RawMSG() driver.MSG {
-	return (*coolq.Event)(e).RawMsg
+	return (*coolq.Event)(e).Raw.Others
 }
 
 type Caller api.Caller
