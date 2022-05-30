@@ -79,4 +79,4 @@ require (
 	modernc.org/memory v1.0.5 // indirect
 )
 
-replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220529051353-f3930badf407
+replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v1.0.0-rc1.0.20220530062239-c499d436351b
