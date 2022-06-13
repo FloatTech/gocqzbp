@@ -44,7 +44,6 @@ var (
 
 func main() {
 	gocq.InitLog()
-	gocq.CheckDoubleClick()
 
 	switch {
 	case !nofork:
@@ -70,8 +69,8 @@ func main() {
 	gocq.InitCache()
 	gocq.InitDB()
 	gocq.PrintBanner()
-	gocq.CheckKey(gocq.ParseCommand())
 	gocq.LoadDevice()
+	gocq.CheckKey(gocq.ParseCommand())
 	gocq.Main()
 }
 
