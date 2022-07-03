@@ -3,7 +3,7 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.4.1
+	github.com/FloatTech/ZeroBot-Plugin v1.5.0-beta1
 	github.com/FloatTech/zbputils v1.4.1-0.20220613042833-33e22060e8d9
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.8.1
@@ -16,7 +16,7 @@ require (
 	github.com/FloatTech/sqlite v0.3.2 // indirect
 	github.com/FloatTech/zbpctrl v1.4.1-0.20220610074608-425160596f27 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20220614093722-87ff2f95910c // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20220622015746-24ee0103e7de // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20220602121309-9e3b8cbefd7a // indirect
 	github.com/RomiChan/syncx v0.0.0-20220404072119-d7ea0ae15a4c // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220123145318-307a86b127bc // indirect
@@ -75,7 +75,6 @@ require (
 	github.com/wcharczuk/go-chart/v2 v2.1.0 // indirect
 	github.com/wdvxdr1123/go-silk v0.0.0-20210316130616-d47b553def60 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
-	gitlab.com/gomidi/midi v1.23.7 // indirect
 	gitlab.com/gomidi/midi/v2 v2.0.17 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
@@ -96,4 +95,4 @@ require (
 	modernc.org/memory v1.1.1 // indirect
 )
 
-replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20220616052852-9ba2fda8ce4e
+replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20220703020755-481cf7c4e160
