@@ -3,7 +3,7 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.0-beta3
+	github.com/FloatTech/ZeroBot-Plugin v1.5.0-beta4
 	github.com/FloatTech/zbputils v1.4.1-0.20220708133204-3fa802132b81
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.8.1
