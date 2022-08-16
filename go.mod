@@ -3,16 +3,17 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.0-beta5
-	github.com/FloatTech/zbputils v1.4.1-0.20220715043109-4e1d708dffe9
+	github.com/FloatTech/ZeroBot-Plugin v1.5.0
+	github.com/FloatTech/zbputils v1.5.1-0.20220816020252-0f57a5ae28aa
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
-	github.com/sirupsen/logrus v1.8.1
-	github.com/tidwall/gjson v1.14.1
+	github.com/sirupsen/logrus v1.9.0
+	github.com/tidwall/gjson v1.14.2
 	github.com/wdvxdr1123/ZeroBot v1.5.2-0.20220715040337-ef4327320c40
 )
 
 require (
-	github.com/FloatTech/AnimeAPI v1.4.1-0.20220715043235-1158db91e898 // indirect
+	github.com/Coloured-glaze/gg v1.3.2 // indirect
+	github.com/FloatTech/AnimeAPI v1.5.1-0.20220816023211-5e11b0d21958 // indirect
 	github.com/FloatTech/sqlite v0.3.3 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
 	github.com/FloatTech/zbpctrl v1.4.1-0.20220715042842-93f081cb0133 // indirect
@@ -27,7 +28,6 @@ require (
 	github.com/corona10/goimagehash v1.0.3 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
 	github.com/ericpauley/go-quantize v0.0.0-20200331213906-ae555eb2afa4 // indirect
-	github.com/fogleman/gg v1.3.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.5.4 // indirect
@@ -79,11 +79,11 @@ require (
 	gitlab.com/gomidi/midi/v2 v2.0.17 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
-	golang.org/x/image v0.0.0-20220601225756-64ec528b34cd // indirect
+	golang.org/x/image v0.0.0-20220722155232-062f8c9fd539 // indirect
 	golang.org/x/mod v0.4.2 // indirect
-	golang.org/x/net v0.0.0-20220607020251-c690dde0001d // indirect
+	golang.org/x/net v0.0.0-20220805013720-a33c5aa5df48 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20220608164250-635b8c9b7f68 // indirect
+	golang.org/x/sys v0.0.0-20220804214406-8e32c043e418 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20211116232009-f0f3c7e86c11 // indirect
@@ -91,7 +91,7 @@ require (
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	modernc.org/libc v1.16.8 // indirect
+	modernc.org/libc v1.16.19 // indirect
 	modernc.org/mathutil v1.4.1 // indirect
 	modernc.org/memory v1.1.1 // indirect
 )
