@@ -3,8 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.0
-	github.com/FloatTech/zbputils v1.5.1-0.20220816020252-0f57a5ae28aa
+	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta1
+	github.com/FloatTech/floatbox v0.0.0-20220822040527-f059031fec44
+	github.com/FloatTech/zbputils v1.5.1-0.20220826103123-0c73a585e38f
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.2
@@ -12,8 +13,8 @@ require (
 )
 
 require (
-	github.com/Coloured-glaze/gg v1.3.2 // indirect
-	github.com/FloatTech/AnimeAPI v1.5.1-0.20220816023211-5e11b0d21958 // indirect
+	github.com/Coloured-glaze/gg v1.3.4 // indirect
+	github.com/FloatTech/AnimeAPI v1.5.1-0.20220901132657-2585bbc03bf6 // indirect
 	github.com/FloatTech/sqlite v0.3.3 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
 	github.com/FloatTech/zbpctrl v1.4.1-0.20220715042842-93f081cb0133 // indirect
@@ -28,9 +29,11 @@ require (
 	github.com/corona10/goimagehash v1.0.3 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
 	github.com/ericpauley/go-quantize v0.0.0-20200331213906-ae555eb2afa4 // indirect
+	github.com/faiface/beep v1.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/fumiama/ahsai v0.1.0 // indirect
 	github.com/fumiama/cron v1.3.0 // indirect
-	github.com/fumiama/go-base16384 v1.5.4 // indirect
+	github.com/fumiama/go-base16384 v1.5.5 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
 	github.com/fumiama/go-registry v0.1.6 // indirect
 	github.com/fumiama/gofastTEA v0.0.10 // indirect
@@ -44,6 +47,9 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.3.0 // indirect
+	github.com/hajimehoshi/oto v0.7.1 // indirect
+	github.com/jfreymuth/oggvorbis v1.0.1 // indirect
+	github.com/jfreymuth/vorbis v1.0.0 // indirect
 	github.com/jinzhu/gorm v1.9.16 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jozsefsallai/gophersauce v1.0.1 // indirect
@@ -79,7 +85,9 @@ require (
 	gitlab.com/gomidi/midi/v2 v2.0.17 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
+	golang.org/x/exp v0.0.0-20190306152737-a1d7652674e8 // indirect
 	golang.org/x/image v0.0.0-20220722155232-062f8c9fd539 // indirect
+	golang.org/x/mobile v0.0.0-20190415191353-3e0bab5405d6 // indirect
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/net v0.0.0-20220805013720-a33c5aa5df48 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
