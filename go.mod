@@ -3,9 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.18
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta1
+	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta2
 	github.com/FloatTech/floatbox v0.0.0-20220822040527-f059031fec44
-	github.com/FloatTech/zbputils v1.5.1-0.20220826103123-0c73a585e38f
+	github.com/FloatTech/zbputils v1.5.1-0.20220906163359-77457cb8fb65
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.2
