@@ -1,6 +1,6 @@
 module github.com/FloatTech/gocqzbp
 
-go 1.18
+go 1.19
 
 require (
 	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta3
