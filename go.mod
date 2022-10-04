@@ -3,9 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta4
-	github.com/FloatTech/floatbox v0.0.0-20220917062226-31fb3ec4b135
-	github.com/FloatTech/zbputils v1.5.1-0.20220922024334-73bc7af39d08
+	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta5
+	github.com/FloatTech/floatbox v0.0.0-20221004092550-1ebf9b4e6198
+	github.com/FloatTech/zbputils v1.5.1-0.20221004094248-ad5a9235757e
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.3
@@ -14,7 +14,7 @@ require (
 
 require (
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.5.1-0.20220921020517-f4076c11486c // indirect
+	github.com/FloatTech/AnimeAPI v1.5.1-0.20221004094358-91497e10dd03 // indirect
 	github.com/FloatTech/sqlite v0.4.0 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
 	github.com/FloatTech/zbpctrl v1.5.2-0.20220921013146-40d64bc7799c // indirect
@@ -39,6 +39,7 @@ require (
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/fumiama/imgsz v0.0.2 // indirect
 	github.com/fumiama/sqlite3 v1.14.6 // indirect
+	github.com/fumiama/unibase2n v0.0.0-20221003115227-e7db987de949 // indirect
 	github.com/gabriel-vasile/mimetype v1.0.4 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0 // indirect
