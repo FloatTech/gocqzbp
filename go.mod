@@ -3,21 +3,21 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.1-beta5
-	github.com/FloatTech/floatbox v0.0.0-20221004092550-1ebf9b4e6198
-	github.com/FloatTech/zbputils v1.5.1-0.20221004094248-ad5a9235757e
+	github.com/FloatTech/ZeroBot-Plugin v1.5.1
+	github.com/FloatTech/floatbox v0.0.0-20221011153549-68005767c531
+	github.com/FloatTech/zbputils v1.5.1-0.20221011154037-734498125e07
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.3
-	github.com/wdvxdr1123/ZeroBot v1.5.2-0.20220917061201-be873b3fa0fb
+	github.com/wdvxdr1123/ZeroBot v1.5.2-0.20221011153413-16c9a77ce4f0
 )
 
 require (
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.5.1-0.20221004094358-91497e10dd03 // indirect
-	github.com/FloatTech/sqlite v0.4.0 // indirect
+	github.com/FloatTech/AnimeAPI v1.5.2-0.20221015060924-fe2f85a3cf45 // indirect
+	github.com/FloatTech/sqlite v0.5.0 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
-	github.com/FloatTech/zbpctrl v1.5.2-0.20220921013146-40d64bc7799c // indirect
+	github.com/FloatTech/zbpctrl v1.5.2-0.20221011153929-4834c6911511 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220828090150-a3c348100dfe // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20220624030127-3310cba9dbc0 // indirect
@@ -86,7 +86,7 @@ require (
 	gitlab.com/gomidi/midi/v2 v2.0.25 // indirect
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
 	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
-	golang.org/x/exp/shiny v0.0.0-20220916125017-b168a2c6b86b // indirect
+	golang.org/x/exp/shiny v0.0.0-20221004215720-b9f4876ce741 // indirect
 	golang.org/x/image v0.0.0-20220902085622-e7cb96979f69 // indirect
 	golang.org/x/mobile v0.0.0-20201217150744-e6ae53a27f4f // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3 // indirect
