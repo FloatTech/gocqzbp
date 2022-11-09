@@ -6,7 +6,7 @@ require (
 	github.com/FloatTech/ZeroBot-Plugin v1.5.2
 	github.com/FloatTech/floatbox v0.0.0-20221029160423-446812ec82d9
 	github.com/FloatTech/zbputils v1.5.1-0.20221107030239-f8dd8b9a6e24
-	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
+	github.com/Mrs4s/go-cqhttp v1.0.0-rc3
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.3
 	github.com/wdvxdr1123/ZeroBot v1.6.3
