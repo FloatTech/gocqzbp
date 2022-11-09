@@ -48,15 +48,18 @@ func main() {
 	case !nofork:
 		os.Args = append(os.Args, "nofork")
 		logrus.Infoln("主进程已启动, pid:", os.Getpid())
-		for {
+		c := 16
+		for c > 0 {
 			err := runChild()
-			logrus.Errorln("子进程退出，重启中:", err)
+			logrus.Errorln("子进程退出, 重启中:", err)
 			time.Sleep(time.Second)
 			if _, err = os.Stat(os.Args[0]); err != nil && (os.Args[0][0] == '.' || os.Args[0][0] == '/' || os.Args[0][1] == ':') {
-				logrus.Errorln("可执行文件被删除，将使用自身进程作恢复处理，如再崩溃则无法二次恢复")
+				logrus.Errorln("可执行文件被删除, 将使用自身进程作恢复处理, 如再崩溃则无法二次恢复")
 				break
 			}
+			c--
 		}
+		logrus.Errorln("到达重启次数上限, 将使用自身进程作恢复处理, 如再崩溃则无法二次恢复")
 	case !norecover:
 		defer func() {
 			logrus.Errorln("子进程退出:", recover())
@@ -79,6 +82,10 @@ func runChild() error {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	err := cmd.Start()
+	if err != nil {
+		cmd = exec.Command("./"+os.Args[0], os.Args[1:]...)
+		err = cmd.Start()
+	}
 	if err != nil {
 		panic(err)
 	}

@@ -21,7 +21,7 @@ _✨ 同时融合了[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin
 ## 命令行参数
 除与[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)一致的参数外，还可以附加任意个数的qq号作为主人`SuperUser`，并使用`-n`参数指定昵称，使用`-p`参数指定指令前缀。
 ```bash
-./gocqzbp [-D] [-c config.yml] [-d] [-h] [-n nickname] [-p prefix] [-w] [-faststart] [key xxxx] qq1 qq2 qq3 ...
+./gocqzbp [-D] [-c config.yml] [-d] [-h] [-n nickname] [-p prefix] [-l latency] [-r ringlen] [-x max process time] [-w] [-faststart] [key xxxx] qq1 qq2 qq3 ...
 
 Options:
   -D    debug mode
@@ -31,10 +31,16 @@ Options:
   -faststart
         skip waiting 5 seconds
   -h    this Help
+  -l uint
+        Response latency (ms). (default 233)
   -n string
         Set default nickname. (default "椛椛")
   -p string
         Set command prefix. (default "/")
+  -r uint
+        Receiving buffer ring size. (default 4096)
   -w string
         cover the working directory
+  -x uint
+        Max process time (min). (default 4)
 ```

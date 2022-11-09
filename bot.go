@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"strconv"
+	"time"
 
 	"github.com/FloatTech/ZeroBot-Plugin/kanban" // 在最前打印 banner
 
@@ -59,6 +60,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/alipayvoice"   // 支付宝到账语音
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/b14"           // base16384加解密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baidu"         // 百度一下
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baiduaudit"    // 百度内容审核
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/base64gua"     // base64卦加解密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baseamasiro"   // base天城文加解密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili"      // b站相关
@@ -88,10 +90,12 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/image_finder"  // 关键字搜图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/inject"        // 注入指令
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/jandan"        // 煎蛋网无聊图
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/jiami"         // 兽语加密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/jikipedia"     // 小鸡词典
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/jptingroom"    // 日语听力学习材料
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/juejuezi"      // 绝绝子生成器
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/lolicon"       // lolicon 随机图片
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/magicprompt"   // magicprompt吟唱提示
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/midicreate"    // 简易midi音乐制作
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/moegoe"        // 日韩 VITS 模型拟声
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/moyu"          // 摸鱼
@@ -105,6 +109,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/nsfw"          // nsfw图片识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/omikuji"       // 浅草寺求签
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/qqwife"        // 一群一天一夫一妻制群老婆
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/realcugan"     // realcugan清晰术
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/reborn"        // 投胎
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/runcode"       // 在线运行代码
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/saucenao"      // 以图搜图
@@ -117,8 +122,10 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/tiangou"       // 舔狗日记
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/tracemoe"      // 搜番
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/translation"   // 翻译
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/vitsnyaru"     // vits猫雷
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/vtb_quotation" // vtb语录
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wangyiyun"     // 网易云音乐热评
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wenben"        // 文本指令大全
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wenxinAI"      // 百度文心AI画图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/word_count"    // 聊天热词
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wordle"        // 猜单词
@@ -184,6 +191,9 @@ func init() {
 	// 默认昵称
 	adana = flag.String("n", "椛椛", "Set default nickname.")
 	prefix = flag.String("p", "/", "Set command prefix.")
+	late := flag.Uint("l", 233, "Response latency (ms).")
+	rsz := flag.Uint("r", 4096, "Receiving buffer ring size.")
+	maxpt := flag.Uint("x", 4, "Max process time (min).")
 	gocq.InitBase()
 
 	arg := flag.Args()
@@ -207,16 +217,17 @@ func init() {
 			Handle(func(ctx *zero.Ctx) {
 				ctx.SendChain(message.Text(kanban.Kanban()))
 			})
-		zero.Run(
-			zero.Config{
-				NickName:      append([]string{*adana}, nicks...),
-				CommandPrefix: *prefix,
-				// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
-				// SuperUsers: []int64{12345678, 87654321}, // 通过代码写死的方式添加主人账号
-				SuperUsers: qqs, // 通过命令行参数的方式添加主人账号
-				Driver:     []zero.Driver{f},
-			},
-		)
+		zero.Run(&zero.Config{
+			NickName:      append([]string{*adana}, nicks...),
+			CommandPrefix: *prefix,
+			// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
+			// SuperUsers: []int64{12345678, 87654321}, // 通过代码写死的方式添加主人账号
+			SuperUsers:     qqs, // 通过命令行参数的方式添加主人账号
+			RingLen:        *rsz,
+			Latency:        time.Duration(*late) * time.Millisecond,
+			MaxProcessTime: time.Duration(*maxpt) * time.Minute,
+			Driver:         []zero.Driver{f},
+		})
 		logrus.Debugln("[bot] set superusers:", qqs)
 	})
 

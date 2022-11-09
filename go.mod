@@ -3,21 +3,22 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.5.1
-	github.com/FloatTech/floatbox v0.0.0-20221011153549-68005767c531
-	github.com/FloatTech/zbputils v1.5.1-0.20221011154037-734498125e07
+	github.com/FloatTech/ZeroBot-Plugin v1.5.2
+	github.com/FloatTech/floatbox v0.0.0-20221029160423-446812ec82d9
+	github.com/FloatTech/zbputils v1.5.1-0.20221107030239-f8dd8b9a6e24
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc2
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.3
-	github.com/wdvxdr1123/ZeroBot v1.5.2-0.20221011153413-16c9a77ce4f0
+	github.com/wdvxdr1123/ZeroBot v1.6.3
 )
 
 require (
+	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.5.2-0.20221015060924-fe2f85a3cf45 // indirect
+	github.com/FloatTech/AnimeAPI v1.5.2-0.20221105044443-0c9004b2f051 // indirect
 	github.com/FloatTech/sqlite v0.5.0 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
-	github.com/FloatTech/zbpctrl v1.5.2-0.20221011153929-4834c6911511 // indirect
+	github.com/FloatTech/zbpctrl v1.5.2 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20220828090150-a3c348100dfe // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20220624030127-3310cba9dbc0 // indirect
@@ -34,7 +35,8 @@ require (
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.6.1 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
-	github.com/fumiama/go-registry v0.1.6 // indirect
+	github.com/fumiama/go-registry v0.2.1 // indirect
+	github.com/fumiama/go-simple-protobuf v0.1.0 // indirect
 	github.com/fumiama/gofastTEA v0.0.10 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
 	github.com/fumiama/imgsz v0.0.2 // indirect
@@ -105,4 +107,4 @@ require (
 	modernc.org/memory v1.4.0 // indirect
 )
 
-replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20220917041839-6f355e70faa3
+replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20221109070110-c3d0b435ddfb
