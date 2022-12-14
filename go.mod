@@ -3,9 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.6.0
+	github.com/FloatTech/ZeroBot-Plugin v1.6.1-beta1
 	github.com/FloatTech/floatbox v0.0.0-20221210051813-4bd44af40c60
-	github.com/FloatTech/zbputils v1.6.1-0.20221210052030-50f19ddfae6f
+	github.com/FloatTech/zbputils v1.6.1-0.20221212090658-d0de5338e354
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc3
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
@@ -15,7 +15,7 @@ require (
 require (
 	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.6.1-0.20221210053102-a9b76da3c119 // indirect
+	github.com/FloatTech/AnimeAPI v1.6.1-0.20221214084932-8c0223841d43 // indirect
 	github.com/FloatTech/rendercard v0.0.2-0.20221128165614-a41216d2422e // indirect
 	github.com/FloatTech/sqlite v1.5.7 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
@@ -60,7 +60,7 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible // indirect
 	github.com/lestrrat-go/strftime v1.0.6 // indirect
-	github.com/lucas-clemente/quic-go v0.31.0 // indirect
+	github.com/lucas-clemente/quic-go v0.31.1 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/marten-seemann/qpack v0.3.0 // indirect
 	github.com/marten-seemann/qtls-go1-18 v0.1.3 // indirect
@@ -106,7 +106,7 @@ require (
 	modernc.org/sqlite v1.20.0 // indirect
 )
 
-replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20221210063609-cc1f1fac9443
+replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20221214085446-e283eb0b4d06
 
 replace modernc.org/sqlite => github.com/fumiama/sqlite3 v1.20.0-with-win386
 
