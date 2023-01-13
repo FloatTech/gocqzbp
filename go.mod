@@ -3,23 +3,23 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.6.1-beta4
-	github.com/FloatTech/floatbox v0.0.0-20230107061309-dcd5c0012dd3
-	github.com/FloatTech/zbputils v1.6.1-0.20230107061700-dadcf8500e7a
+	github.com/FloatTech/ZeroBot-Plugin v1.6.1
+	github.com/FloatTech/floatbox v0.0.0-20230111053652-a03d6334fadf
+	github.com/FloatTech/zbputils v1.6.2-0.20230112162135-c326104c37e6
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc4
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/wdvxdr1123/ZeroBot v1.6.6
+	github.com/wdvxdr1123/ZeroBot v1.6.7
 )
 
 require (
 	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.6.1-0.20230107074849-392b0b10b149 // indirect
-	github.com/FloatTech/rendercard v0.0.3 // indirect
+	github.com/FloatTech/AnimeAPI v1.6.1-0.20230111055153-4d8aebd3eab9 // indirect
+	github.com/FloatTech/rendercard v0.0.8 // indirect
 	github.com/FloatTech/sqlite v1.5.7 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
-	github.com/FloatTech/zbpctrl v1.5.3-0.20221210051848-740ab7bd6ec3 // indirect
+	github.com/FloatTech/zbpctrl v1.5.3-0.20230109124217-41203036b80a // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
 	github.com/Mrs4s/MiraiGo v0.0.0-20221202060717-4658474c60dd // indirect
 	github.com/RomiChan/protobuf v0.0.0-20220624030127-3310cba9dbc0 // indirect
@@ -33,9 +33,9 @@ require (
 	github.com/faiface/beep v1.1.0 // indirect
 	github.com/fumiama/ahsai v0.1.0 // indirect
 	github.com/fumiama/cron v1.3.0 // indirect
-	github.com/fumiama/go-base16384 v1.6.1 // indirect
+	github.com/fumiama/go-base16384 v1.6.4 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
-	github.com/fumiama/go-registry v0.2.5-0.20221121111817-44b0846bdce6 // indirect
+	github.com/fumiama/go-registry v0.2.5 // indirect
 	github.com/fumiama/go-simple-protobuf v0.1.0 // indirect
 	github.com/fumiama/gofastTEA v0.0.10 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
