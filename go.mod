@@ -3,9 +3,9 @@ module github.com/FloatTech/gocqzbp
 go 1.19
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.6.1
+	github.com/FloatTech/ZeroBot-Plugin v1.6.1-fix1
 	github.com/FloatTech/floatbox v0.0.0-20230111053652-a03d6334fadf
-	github.com/FloatTech/zbputils v1.6.2-0.20230112162135-c326104c37e6
+	github.com/FloatTech/zbputils v1.6.2-0.20230113162508-c8966fa17745
 	github.com/Mrs4s/go-cqhttp v1.0.0-rc4
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
@@ -15,7 +15,7 @@ require (
 require (
 	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
 	github.com/Coloured-glaze/gg v1.3.4 // indirect
-	github.com/FloatTech/AnimeAPI v1.6.1-0.20230111055153-4d8aebd3eab9 // indirect
+	github.com/FloatTech/AnimeAPI v1.6.1-0.20230115164716-85a83c2a047a // indirect
 	github.com/FloatTech/rendercard v0.0.8 // indirect
 	github.com/FloatTech/sqlite v1.5.7 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
