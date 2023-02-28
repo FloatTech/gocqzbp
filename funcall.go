@@ -4,6 +4,7 @@ import (
 	"github.com/FloatTech/zbputils/driver"
 	"github.com/Mrs4s/go-cqhttp/coolq"
 	"github.com/Mrs4s/go-cqhttp/modules/api"
+	"github.com/Mrs4s/go-cqhttp/pkg/onebot"
 	"github.com/tidwall/gjson"
 )
 
@@ -29,7 +30,7 @@ func (e *Event) RawMSG() driver.MSG {
 type Caller api.Caller
 
 func (c *Caller) Call(action string, p string) driver.MSG {
-	return (*api.Caller)(c).Call(action, gjson.Parse(p))
+	return (*api.Caller)(c).Call(action, onebot.V11, gjson.Parse(p))
 }
 
 func newcaller(bot driver.CQBot) driver.Caller {
