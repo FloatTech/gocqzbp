@@ -73,6 +73,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/dailynews"        // 今日早报
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/danbooru"         // DeepDanbooru二次元图标签识别
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/diana"            // 嘉心糖发病
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/drawlots"         // 多功能抽签
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/dress"            // 女装
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/drift_bottle"     // 漂流瓶
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/emojimix"         // 合成emoji
@@ -176,15 +177,20 @@ import (
 	//                                                                  //
 	//                                                                  //
 	// -----------------------以下为内置依赖，勿动------------------------ //
-	"github.com/FloatTech/floatbox/process"
-	"github.com/FloatTech/zbputils/driver"
 	"github.com/sirupsen/logrus"
+
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/message"
 
+	"github.com/FloatTech/floatbox/process"
+	"github.com/FloatTech/zbputils/driver"
+
 	"github.com/Mrs4s/go-cqhttp/cmd/gocq"
 	"github.com/Mrs4s/go-cqhttp/coolq"
+	"github.com/Mrs4s/go-cqhttp/global/terminal"
 	"github.com/Mrs4s/go-cqhttp/modules/servers"
+
+	"github.com/FloatTech/ZeroBot-Plugin/kanban/banner"
 	// -----------------------以上为内置依赖，勿动------------------------ //
 )
 
@@ -201,6 +207,7 @@ func init() {
 	late := flag.Uint("l", 233, "Response latency (ms).")
 	rsz := flag.Uint("r", 4096, "Receiving buffer ring size.")
 	maxpt := flag.Uint("x", 4, "Max process time (min).")
+	terminal.SetTitle()
 	gocq.InitBase()
 
 	arg := flag.Args()
@@ -218,7 +225,7 @@ func init() {
 		// 帮助
 		zero.OnFullMatchGroup([]string{"/help", ".help", "菜单"}, zero.OnlyToMe).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {
-				ctx.SendChain(message.Text(kanban.Banner))
+				ctx.SendChain(message.Text(banner.Banner))
 			})
 		zero.OnFullMatch("查看zbp公告", zero.OnlyToMe, zero.AdminPermission).SetBlock(true).FirstPriority().
 			Handle(func(ctx *zero.Ctx) {

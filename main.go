@@ -8,6 +8,8 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/Mrs4s/go-cqhttp/cmd/gocq"
+	"github.com/Mrs4s/go-cqhttp/global/terminal"
+
 	_ "github.com/Mrs4s/go-cqhttp/db/leveldb"   // leveldb
 	_ "github.com/Mrs4s/go-cqhttp/modules/silk" // silk编码模块
 )
@@ -42,7 +44,7 @@ var (
 )
 
 func main() {
-	gocq.InitLog()
+	gocq.PrepareData()
 
 	switch {
 	case !nofork:
@@ -68,12 +70,12 @@ func main() {
 	}
 
 	logrus.Infoln("子进程已启动, pid:", os.Getpid())
-	gocq.InitCache()
-	gocq.InitDB()
-	gocq.PrintBanner()
-	gocq.LoadDevice()
-	gocq.CheckKey(gocq.ParseCommand())
-	gocq.Main()
+
+	gocq.LoginInteract()
+	_ = terminal.DisableQuickEdit()
+	_ = terminal.EnableVT100()
+	gocq.WaitSignal()
+	_ = terminal.RestoreInputMode()
 }
 
 func runChild() error {

@@ -3,26 +3,26 @@ module github.com/FloatTech/gocqzbp
 go 1.20
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.6.2
-	github.com/FloatTech/floatbox v0.0.0-20230207075003-0f70b30c320d
-	github.com/FloatTech/zbputils v1.6.2-0.20230217063720-e64cc4bde7c6
-	github.com/Mrs4s/go-cqhttp v1.0.0-rc4
+	github.com/FloatTech/ZeroBot-Plugin v1.7.0-beta3
+	github.com/FloatTech/floatbox v0.0.0-20230301074105-03017a267762
+	github.com/FloatTech/zbputils v1.6.2-0.20230309054847-f60ce7c0aa73
+	github.com/Mrs4s/go-cqhttp v1.0.0-rc4.0.20230307155312-414f0674317d
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/wdvxdr1123/ZeroBot v1.6.9
+	github.com/wdvxdr1123/ZeroBot v1.6.10
 )
 
 require (
 	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
-	github.com/FloatTech/AnimeAPI v1.6.1-0.20230225045520-b537bd7dfbfe // indirect
+	github.com/FloatTech/AnimeAPI v1.6.1-0.20230301080805-a8aa0e4cee1f // indirect
 	github.com/FloatTech/gg v1.1.2 // indirect
 	github.com/FloatTech/imgfactory v0.2.2-0.20230215052637-9f7b05520ca9 // indirect
-	github.com/FloatTech/rendercard v0.0.10-0.20230215092509-ff0745852f23 // indirect
+	github.com/FloatTech/rendercard v0.0.10-0.20230223064326-45d29fa4ede9 // indirect
 	github.com/FloatTech/sqlite v1.5.7 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
-	github.com/FloatTech/zbpctrl v1.5.3-0.20230130095145-714ad318cd52 // indirect
+	github.com/FloatTech/zbpctrl v1.5.3-0.20230301071613-f2c5c97cec88 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20230223093528-5a89d8a9bff2 // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20230305102225-a42218b851d8 // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20230204044148-2ed269a2e54d // indirect
 	github.com/RomiChan/syncx v0.0.0-20221202055724-5f842c53020e // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220227141055-9b2c6168c9c5 // indirect
@@ -37,7 +37,7 @@ require (
 	github.com/fumiama/cron v1.3.0 // indirect
 	github.com/fumiama/go-base16384 v1.6.4 // indirect
 	github.com/fumiama/go-hide-param v0.1.4 // indirect
-	github.com/fumiama/go-registry v0.2.5 // indirect
+	github.com/fumiama/go-registry v0.2.6 // indirect
 	github.com/fumiama/go-simple-protobuf v0.1.0 // indirect
 	github.com/fumiama/gofastTEA v0.0.10 // indirect
 	github.com/fumiama/gotracemoe v0.0.3 // indirect
@@ -111,8 +111,6 @@ require (
 	modernc.org/memory v1.4.0 // indirect
 	modernc.org/sqlite v1.20.0 // indirect
 )
-
-replace github.com/Mrs4s/go-cqhttp => github.com/FloatTech/gocq v0.0.0-20230228034036-cb0d1da98468
 
 replace modernc.org/sqlite => github.com/fumiama/sqlite3 v1.20.0-with-win386
 
