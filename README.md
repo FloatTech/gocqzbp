@@ -3,8 +3,6 @@
     <img src="https://user-images.githubusercontent.com/25968335/120111974-8abef880-c139-11eb-99cd-fa928348b198.png" width="200" height="200" alt="go-cqhttp">
   </a>
 </p>
-<br>
-<img src="https://cmoe.azurewebsites.net/cmoe?name=gocqzbp" alt="gocqzbp-counter">
 
 <div align="center">
 
@@ -13,6 +11,8 @@
 _✨ 基于 [Mirai](https://github.com/mamoe/mirai) 以及 [MiraiGo](https://github.com/Mrs4s/MiraiGo) 的 [OneBot](https://github.com/howmanybots/onebot/blob/master/README.md) Golang 原生实现 ✨_  
 
 _✨ 同时融合了[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin) ✨_  
+  
+<img align="center" src="https://cmoe.azurewebsites.net/cmoe?name=gocqzbp" alt="gocqzbp-counter">
 
 </div>
 
