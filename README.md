@@ -12,7 +12,7 @@ _✨ 基于 [Mirai](https://github.com/mamoe/mirai) 以及 [MiraiGo](https://git
 
 _✨ 同时融合了[ZeroBot-Plugin](https://github.com/FloatTech/ZeroBot-Plugin) ✨_  
   
-<img align="center" src="https://cmoe.azurewebsites.net/cmoe?name=gocqzbp" alt="gocqzbp-counter">
+<img align="center" src="https://counter.seku.su/cmoe?name=gocqzbp" alt="gocqzbp-counter">
 
 </div>
 
