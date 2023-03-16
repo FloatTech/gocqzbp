@@ -3,26 +3,26 @@ module github.com/FloatTech/gocqzbp
 go 1.20
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.7.0-beta4
-	github.com/FloatTech/floatbox v0.0.0-20230312033609-f3826d7c8d00
-	github.com/FloatTech/zbputils v1.6.2-0.20230312042148-dd8632bf31f5
-	github.com/Mrs4s/go-cqhttp v1.0.0-rc4.0.20230310173045-a0e3291725a0
+	github.com/FloatTech/ZeroBot-Plugin v1.7.0-beta5
+	github.com/FloatTech/floatbox v0.0.0-20230316111222-7ffde57284cc
+	github.com/FloatTech/zbputils v1.6.2-0.20230316111555-2d1ec958de04
+	github.com/Mrs4s/go-cqhttp v1.0.0-rc4.0.20230314183519-1d0b513b96c6
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/wdvxdr1123/ZeroBot v1.6.10
+	github.com/wdvxdr1123/ZeroBot v1.6.11
 )
 
 require (
 	github.com/Baidu-AIP/golang-sdk v1.1.1 // indirect
-	github.com/FloatTech/AnimeAPI v1.6.1-0.20230312042320-53aa800c2c58 // indirect
+	github.com/FloatTech/AnimeAPI v1.6.1-0.20230316111643-46d40c9d80e3 // indirect
 	github.com/FloatTech/gg v1.1.2 // indirect
-	github.com/FloatTech/imgfactory v0.2.2-0.20230215052637-9f7b05520ca9 // indirect
+	github.com/FloatTech/imgfactory v0.2.2-0.20230315152233-49741fc994f9 // indirect
 	github.com/FloatTech/rendercard v0.0.10-0.20230223064326-45d29fa4ede9 // indirect
 	github.com/FloatTech/sqlite v1.5.7 // indirect
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
-	github.com/FloatTech/zbpctrl v1.5.3-0.20230301071613-f2c5c97cec88 // indirect
+	github.com/FloatTech/zbpctrl v1.5.3-0.20230316111343-dd078fa43fe3 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20230310170800-80b6b2843637 // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20230314181550-5e7ade149fff // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20230204044148-2ed269a2e54d // indirect
 	github.com/RomiChan/syncx v0.0.0-20221202055724-5f842c53020e // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220227141055-9b2c6168c9c5 // indirect
