@@ -3,10 +3,10 @@ module github.com/FloatTech/gocqzbp
 go 1.20
 
 require (
-	github.com/FloatTech/ZeroBot-Plugin v1.7.0-beta5
+	github.com/FloatTech/ZeroBot-Plugin v1.7.0
 	github.com/FloatTech/floatbox v0.0.0-20230316111222-7ffde57284cc
 	github.com/FloatTech/zbputils v1.6.2-0.20230316111555-2d1ec958de04
-	github.com/Mrs4s/go-cqhttp v1.0.0-rc4.0.20230314183519-1d0b513b96c6
+	github.com/Mrs4s/go-cqhttp v1.0.0-rc5.0.20230320023405-008d546f1a2e
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
 	github.com/wdvxdr1123/ZeroBot v1.6.11
@@ -22,7 +22,7 @@ require (
 	github.com/FloatTech/ttl v0.0.0-20220715042055-15612be72f5b // indirect
 	github.com/FloatTech/zbpctrl v1.5.3-0.20230316111343-dd078fa43fe3 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
-	github.com/Mrs4s/MiraiGo v0.0.0-20230314181550-5e7ade149fff // indirect
+	github.com/Mrs4s/MiraiGo v0.0.0-20230317162854-fd83d24f6794 // indirect
 	github.com/RomiChan/protobuf v0.1.1-0.20230204044148-2ed269a2e54d // indirect
 	github.com/RomiChan/syncx v0.0.0-20221202055724-5f842c53020e // indirect
 	github.com/RomiChan/websocket v1.4.3-0.20220227141055-9b2c6168c9c5 // indirect
@@ -95,14 +95,14 @@ require (
 	golang.org/x/crypto v0.4.0 // indirect
 	golang.org/x/exp v0.0.0-20221205204356-47842c84f3db // indirect
 	golang.org/x/exp/shiny v0.0.0-20221126150942-6ab00d035af9 // indirect
-	golang.org/x/image v0.3.0 // indirect
+	golang.org/x/image v0.5.0 // indirect
 	golang.org/x/mobile v0.0.0-20201217150744-e6ae53a27f4f // indirect
 	golang.org/x/mod v0.6.0 // indirect
 	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.4.0 // indirect
 	golang.org/x/term v0.3.0 // indirect
-	golang.org/x/text v0.6.0 // indirect
+	golang.org/x/text v0.7.0 // indirect
 	golang.org/x/time v0.2.0 // indirect
 	golang.org/x/tools v0.2.0 // indirect
 	gopkg.ilharper.com/x/isatty v1.1.1 // indirect
