@@ -9,7 +9,7 @@ require (
 	github.com/Mrs4s/go-cqhttp v1.1.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/wdvxdr1123/ZeroBot v1.7.2
+	github.com/wdvxdr1123/ZeroBot v1.7.4
 )
 
 require (
